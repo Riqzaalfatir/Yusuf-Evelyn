@@ -5,6 +5,7 @@ const About = () => {
   return (
     <section className="relative w-full overflow-y-hidden overflow-x-hidden">
       <Image
+      alt="Bg Marmer"
         src="/images/About/Bg-Marmer.svg"
         fill
         className="object-cover object-bottom"

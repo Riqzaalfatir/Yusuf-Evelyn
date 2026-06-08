@@ -38,7 +38,7 @@ const Wishes = () => {
     <section className="relative w-full overflow-y-hidden overflow-x-hidden">
       <Image
         src="/images/About/Bg-Marmer.svg"
-        alt=""
+        alt="Bg Marmer"
         fill
         className="object-cover object-bottom"
       />
