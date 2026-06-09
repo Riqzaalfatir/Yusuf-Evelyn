@@ -193,7 +193,7 @@ const NotifModal = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-[#E9E9E9]/60 backdrop-blur-sm px-6"
+      className="fixed inset-0 z-[95] flex items-center justify-center bg-[#E9E9E9]/60 backdrop-blur-sm px-6"
       onClick={handleBackdrop}
     >
       <div className="relative bg-white rounded-lg lg:rounded-2xl shadow-xl flex flex-col items-center text-center animate-modalIn overflow-hidden w-[322px] h-[360px] lg:w-[485px] lg:h-[543px]">

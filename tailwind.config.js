@@ -13,6 +13,8 @@ module.exports = {
         ovo: ["var(--font-ovo)"],
         bigCaslon: ["var(--font-big-caslon)"],
         creators: ["var(--font-creators-type)"],
+        sans: ["var(--font-noto-sans)"],
+        ibm: ["var(--font-ibm-plex-sans)"], 
       },
     },
   },

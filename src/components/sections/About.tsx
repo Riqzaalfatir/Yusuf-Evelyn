@@ -3,20 +3,20 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="relative w-full overflow-y-hidden overflow-x-hidden">
+    <section id="tentang" className="relative w-full overflow-y-hidden overflow-x-hidden">
       <Image
-      alt="Bg Marmer"
+        alt="Bg Marmer"
         src="/images/About/Bg-Marmer.svg"
         fill
         className="object-cover object-bottom"
       />
 
-{/* Gradient Top */}
-<div className="absolute top-0 left-0 w-full h-[31vw] z-30 bg-gradient-to-b from-white from-65% to-transparent" />
-{/* Gradient Bottom */}
-<div className="absolute bottom-0 left-0 w-full h-[55vw] z-30 bg-gradient-to-t from-white via-white to-transparent" />
+      {/* Gradient Top */}
+      <div className="absolute top-0 left-0 w-full h-[65vw] z-20 bg-gradient-to-b from-white from-55% to-transparent" />
+      {/* Gradient Bottom */}
+      <div className="absolute bottom-0 left-0 w-full h-[75vw] z-20 bg-gradient-to-t from-white via-white to-transparent" />
 
-      <Image
+      {/* <Image
         src="/images/About/Ornament-KiriAtas.webp"
         alt=""
         width={129}
@@ -30,7 +30,7 @@ const About = () => {
         width={142}
         height={305}
         className="absolute top-0  w-[36.41vw] right-0 z-50"
-      />
+      /> */}
 
       <Image
         src="/images/About/Ranting.webp"
@@ -40,7 +40,7 @@ const About = () => {
         className="absolute top-[53%]  w-[30vw] right-0 z-20"
       />
 
-      <Image
+      {/* <Image
         src="/images/About/Rumput-Kerang.webp"
         alt=""
         width={220}
@@ -54,42 +54,72 @@ const About = () => {
         width={177}
         height={177}
         className="absolute -bottom-[3vw] -right-[1vw] z-50"
-      />
+      /> */}
 
-
-       {/* Layer Atas */}
-      <div className="absolute top-0 left-0 w-[100vw] h-[1vw] z-40 ">
+      {/* Layer Atas */}
+      {/* <div className="absolute top-0 left-0 w-[100vw] z-40">
         <Image
-          src="/images/About/Layer-Atas.webp"
+          src="/images/About/tes2.png"
           alt=""
-           width={577}
-        height={457}
-          className="object-cover"
+          width={577}
+          height={457}
+          className="w-full h-auto"
         />
-      </div>
+      </div> */}
 
       {/* Layer Bawah */}
-      <div className="absolute bottom-0 left-0 w-[100vw] h-[47vw] z-40 ">
+      {/* <div className="absolute bottom-0 left-0 w-[100vw] h-[47vw] z-40 ">
         <Image
-          src="/images/About/layer.svg"
+          src="/images/About/Layer-Bawah.webp"
           alt=""
           fill
           className="object-cover"
         />
-      </div>
+      </div> */}
 
+        {/* ASET ATAS */}
+       <img
+          src="/images/About/Aset-Atas.webp"
+          alt="Pohon Kanan Bawah"
+          className="absolute -top-[5vw] z-[50]"
+          style={{
+            width: "140vw",
+            height: "auto",
+            left: "67%",
+            transform: "translateX(-50%)",
+            maxWidth: "none",
+          }}
+        />
 
+      {/* ASET BAWAH */}
+       <img
+          src="/images/About/Aset-Bawah.webp"
+          alt="Pohon Kanan Bawah"
+          className="absolute -bottom-[2vw] z-[50]"
+          style={{
+            width: "140vw",
+            height: "auto",
+            left: "36%",
+            transform: "translateX(-50%)",
+            maxWidth: "none",
+          }}
+        />
 
-      {/* Konten */}
-      <div className="relative z-10 flex flex-col items-center text-center pt-[9.2vw] px-[8.5vw]">
-        <div 
-        className="bg-white w-full px-[4.4vw] pt-[21.8vw] pb-[45.9vw] flex flex-col items-center"
-          style={{ boxShadow: "0px 4px 14.5px 0px rgba(0,0,0,0.62)" }}>
+      {/* Konten KOTAK */}
+      <div className="relative z-60 flex flex-col items-center text-center pt-[9.2vw] px-[8.5vw]">
+        {/* KOTAK — absolute, z rendah → ketutup gradient ✅ */}
+        <div
+          className="absolute inset-0 bg-white inset-x-[8.5vw]"
+          style={{ boxShadow: "0px 4px 14.5px 0px rgba(0,0,0,0.62)" }}
+        />
+
+        {/* ISI KONTEN — sibling kotak, z tinggi → di atas gradient ✅ */}
+        <div className="relative z-[90] w-full px-[4.4vw] pt-[21.8vw] pb-[45.9vw] flex flex-col items-center">
           <p className="font-ovo text-[14px] text-[#937E5B]">
             "From His fullness we have all received,
             <br />
             grace upon grace."
-            <span className="block pt-[3.5vw]">John 1:16</span>
+            <span className="block pt-[6vw]">John 1:16</span>
           </p>
 
           <Image
@@ -106,7 +136,6 @@ const About = () => {
             our beloved son and daughter
           </p>
 
-          {/* Foto + data cowok */}
           <div className="flex flex-col items-center leading-none mt-[26px]">
             <div className="rounded-full overflow-hidden w-[200px] h-[261px]">
               <Image
@@ -117,19 +146,18 @@ const About = () => {
                 className="object-cover w-full h-full"
               />
             </div>
-            <h2 className="font-bigCaslontext-[20px] text-[#937E5B] pt-[41px]">
+            <h2 className="font-bigCaslon text-[20px] text-[#937E5B] pt-[41px]">
               JUSUF AURUM MERUKH
             </h2>
-            <p className="font-ovo text-[13px] text-[#937E5B] pt-[15px]">
+            <p className="font-ovo text-[13px] text-[#937E5B] pt-[20px]">
               The Son of
             </p>
-            <p className="font-ovo text-[14px] text-[#937E5B] pt-[9px] leading-[25px]">
+            <p className="font-ovo text-[14px] text-[#937E5B] pt-[14px] leading-[25px]">
               Mr. RUDOLF JOHANES MERUKH and
               <span className="block">Mrs. ALLENDINE ZUSANE LUNTUNGAN</span>
             </p>
           </div>
 
-          {/* Foto + data cewek */}
           <div className="flex flex-col items-center leading-none mt-[55px]">
             <div className="rounded-full overflow-hidden w-[200px] h-[261px]">
               <Image
@@ -143,10 +171,10 @@ const About = () => {
             <h2 className="font-bigCaslon text-[20px] text-[#937E5B] pt-[39px]">
               EVELYN NATHANIA OVANI
             </h2>
-            <p className="font-ovo text-[13px] text-[#937E5B] pt-[15px]">
+            <p className="font-ovo text-[13px] text-[#937E5B] pt-[20px]">
               The Daughter of
             </p>
-            <p className="font-ovo text-[14px] text-[#937E5B] pt-[13px] leading-[25px]">
+            <p className="font-ovo text-[14px] text-[#937E5B] pt-[14px] leading-[25px]">
               Mr. WIBOWO SANTOSO and
               <span className="block">Mrs. IMELDA SIEN</span>
             </p>

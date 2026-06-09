@@ -37,7 +37,7 @@ const WeddingGift = () => {
       />
 
       {/* Konten */}
-      <div className="relative z-10 flex flex-col items-center text-center px-8 text-white pt-[146px] pb-[130px]">
+      <div className="relative z-10 flex flex-col items-center text-center px-8 text-white pt-[136px] pb-[130px]">
         <h2 className="text-[24px] font-bigCaslon tracking-wide text-white uppercase">
           Wedding Gift
         </h2>
@@ -50,7 +50,7 @@ const WeddingGift = () => {
                         className="pt-[5px]"
                       />
 
-        <p className="text-[14px] font-ovo text-white mt-[30px] tracking-wide">
+        <p className="text-[14px] font-ovo text-white mt-[38px] tracking-wide">
           Your presence and prayers
           <br />
           are the greatest blessing to us.
@@ -65,10 +65,10 @@ const WeddingGift = () => {
         </p>
 
         {/* List rekening */}
-        <div className="w-full max-w-[224px] flex flex-col gap-6 mt-[33px]">
+        <div className="w-full max-w-[224px] flex flex-col gap-6 mt-[46px]">
           {gifts.map((gift, index) => (
             <div key={index} className="w-full">
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between tracking-wide">
                 <div className="text-left">
                   <p className="text-[14px] font-ovo text-white">
                     {gift.bank}
@@ -87,7 +87,7 @@ const WeddingGift = () => {
                   {copied === index ? "COPIED!" : "COPY"}
                 </button>
               </div>
-              <div className="mt-3 border-b border-white" />
+              <div className="mt-1.5 border-b border-white" />
             </div>
           ))}
         </div>

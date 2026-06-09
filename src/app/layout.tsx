@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { century, ovo, bigCaslon, creatorsType } from "@/lib/fonts";
+import { century, ovo, bigCaslon, creatorsType, notoSans,
+  ibmPlexSans, } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,7 +16,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${century.variable} ${ovo.variable}   ${bigCaslon.variable}
+      className={`${notoSans.variable}  ${ibmPlexSans.variable} ${century.variable} ${ovo.variable}  ${bigCaslon.variable}
     ${creatorsType.variable}`}
     >
       <body>{children}</body>

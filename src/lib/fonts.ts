@@ -1,5 +1,5 @@
 import localFont from "next/font/local";
-import { Ovo } from "next/font/google";
+import { Ovo, Noto_Sans, IBM_Plex_Sans  } from "next/font/google";
 
 export const century = localFont({
   src: "../../public/fonts/Century.ttf",
@@ -20,4 +20,16 @@ export const ovo = Ovo({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-ovo",
+});
+
+export const notoSans = Noto_Sans({
+  subsets: ["latin"],
+  variable: "--font-noto-sans",
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+export const ibmPlexSans = IBM_Plex_Sans({
+  subsets: ["latin"],
+  variable: "--font-ibm-plex-sans",
+  weight: ["300", "400", "500", "600", "700"],
 });

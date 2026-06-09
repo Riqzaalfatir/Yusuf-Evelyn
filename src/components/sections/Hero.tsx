@@ -23,8 +23,10 @@ const Hero = () => {
           }}
         />
 
-        <div className="absolute inset-0 flex flex-col items-center justify-start pt-[25%] text-center z-10">
-          <p className="text-white font-ovo text-[14px] tracking-widest">The Wedding of</p>
+        <div className="absolute inset-0 flex flex-col items-center justify-start pt-[37.8%] text-center z-10">
+          <p className="text-white font-ovo text-[14px] tracking-widest">
+            The Wedding of
+          </p>
           <h1 className="text-white font-bigCaslon text-[32px]">
             JUSUF & EVELYN
           </h1>

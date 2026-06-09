@@ -7,10 +7,13 @@ import Dresscode from "@/components/sections/Dresscode";
 import WeddingGift from "@/components/sections/WeddingGift";
 import Wishes from "@/components/sections/Wishes";
 import Thankyou from "@/components/sections/Thankyou";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
     <>
+    <Header/>
       <Hero />
       <About />
       <Countdown />
@@ -20,6 +23,7 @@ export default function Home() {
       <WeddingGift />
       <Wishes />
       <Thankyou/>
+      <Footer />
     </>
   );
 }
