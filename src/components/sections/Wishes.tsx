@@ -237,7 +237,7 @@ const Wishes = () => {
           <div className="relative overflow-hidden rounded-[28px] border border-[#713324]/20 bg-[#F6EBDD]/95 w-full max-w-[330px]">
             <div className="absolute top-0 left-0 w-full h-[6px] bg-gradient-to-r from-[#C58B63] via-[#E2C6AA] to-[#C58B63]" />
             <div className="px-7 pt-9 pb-7 flex flex-col items-center text-center">
-              <div className="w-[72px] h-[72px] rounded-full bg-[#E2C6AA]/60 border border-[#713324]/10 flex items-center justify-center mb-5">
+              <div className="w-[72px] h-[72px] rounded-full bg-[#713324]/80 border border-[#713324]/10 flex items-center justify-center mb-5">
                 <Image
                   src="/images/Wishes/Pesan.svg"
                   alt="Success"
@@ -246,7 +246,7 @@ const Wishes = () => {
                   className="object-contain opacity-90"
                 />
               </div>
-              <h3 className="font-cylburn text-[30px] leading-none text-[#713324]">
+              <h3 className="font-creators text-[30px] leading-none text-[#713324]">
                 Thank You
               </h3>
               <div className="w-[70px] h-[1px] bg-[#713324]/30 my-4" />

@@ -134,7 +134,7 @@ const Dresscode = () => {
                 DRESS CODE
               </h2>
               <Image
-                src="/images/EventOrder/Row.svg"
+            src="/images/EventOrder/Row.svg"
                 alt="ornament"
                 width={156}
                 height={21}
@@ -159,7 +159,7 @@ const Dresscode = () => {
                 RSVP
               </h2>
               <Image
-                src="/images/EventOrder/Row.svg"
+            src="/images/EventOrder/Row.svg"
                 alt="ornament"
                 width={156}
                 height={21}

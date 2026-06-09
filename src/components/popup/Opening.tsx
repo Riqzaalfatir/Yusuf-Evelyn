@@ -80,7 +80,7 @@ const Opening = ({ setStart, namaTamu = "Sela" }: OpeningProps) => {
             className="relative bg-white rounded-xl md:rounded-2xl overflow-hidden w-[290px] md:w-[416px] shadow-xl flex flex-col z-[100] [box-shadow:0px_8px_11.6px_0px_rgba(0,0,0,0.54)]"
           >
             {/* FOTO */}
-            <div className="relative w-full h-[180px] md:h-[220px] overflow-hidden z-10 lg:hidden">
+            <div className="relative w-full h-[190px] md:h-[220px] overflow-hidden z-10 lg:hidden">
               <Image
                 src="/images/Opening/Pantai-Mobile.webp"
                 alt="prewed"

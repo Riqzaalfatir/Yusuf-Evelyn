@@ -9,7 +9,12 @@ const IMAGES_TO_PRELOAD = [
   "/images/Opening/Aset-Atas.webp",
 
   // HERO
-  "/images/Hero/Pengantin-Hero.svg",
+  "/images/Hero/Pengantin.webp",
+
+  // POPUP PESAN
+  "/images/Popup/TandaCeklisBg.svg", 
+  "/images/Popup/TandaSeru.svg", 
+  "/images/Popup/TandaTanya.svg", 
 ];
 
 export function usePreloader() {

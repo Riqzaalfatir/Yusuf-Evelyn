@@ -8,9 +8,9 @@ const ThankYou: React.FC = () => {
       style={{ aspectRatio: "390/801" }}
     >
       <img
-        src="/images/Thankyou/Bg-Thankyou.svg"
+        src="/images/Thankyou/Pengantin.webp"
         alt="background"
-        className="absolute inset-0 w-full h-full object-cover object-bottom"
+        className="absolute inset-0 w-full h-full object-cover object-bottom scale-y-[1.2]"
       />
 
       <div
