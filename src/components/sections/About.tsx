@@ -81,7 +81,7 @@ const About = () => {
        <img
           src="/images/About/Aset-Atas.webp"
           alt="Pohon Kanan Bawah"
-          className="absolute -top-[5vw] z-[50]"
+          className="absolute -top-[1vw] z-[50]"
           style={{
             width: "140vw",
             height: "auto",
@@ -106,7 +106,7 @@ const About = () => {
         />
 
       {/* Konten KOTAK */}
-      <div className="relative z-60 flex flex-col items-center text-center pt-[9.2vw] px-[8.5vw]">
+      <div className="relative z-60 flex flex-col items-center text-center pt-[8vw] px-[8.5vw]">
         {/* KOTAK — absolute, z rendah → ketutup gradient ✅ */}
         <div
           className="absolute inset-0 bg-white inset-x-[8.5vw]"

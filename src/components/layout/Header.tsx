@@ -53,7 +53,7 @@ const Header = () => {
 
   return (
     <div
-      className="fixed top-0 left-0 w-full z-50 px-4 py-3 lg:left-2 lg:right-0 lg:w-[435px] lg:px-8 lg:pt-[22px]"
+      className="fixed top-0 left-0 w-full z-[99] px-4 py-3 lg:left-2 lg:right-0 lg:w-[435px] lg:px-8 lg:pt-[22px]"
       style={{ willChange: "transform", transform: "translateZ(0)" }}
     >
       {/* HAMBURGER */}
@@ -89,7 +89,7 @@ const Header = () => {
               transition={{ duration: 1, ease: "easeOut" }}
               className="absolute top-[-8px] left-[7px] lg:top-[-10px] lg:left-[11px]"
             >
-              <p className="text-[32px] lg:text-[54px] text-white font-ibm font-light">x</p>
+              <p className="text-[30px] lg:text-[54px] text-white font-ibm font-light">x</p>
             </motion.button>
 
             {/* MENU */}
@@ -122,7 +122,7 @@ const Header = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.6, ease: "easeOut" }}
-              className="pt-[17px] lg:pt-[28px] pl-3 text-[8px] lg:text-[14px] font-sans font-light  pb-2 lg:pb-4 tracking-wide"
+              className="pt-[20px] lg:pt-[28px] pl-3 text-[8px] lg:text-[14px] font-sans font-light  pb-2 lg:pb-4 tracking-wide"
             >
               Select a section above to continue
             </motion.p>
