@@ -49,7 +49,7 @@ const Dresscode = () => {
         />
 
         {/* Gradient Top */}
-        <div className="absolute top-0 left-0 w-full h-[80vw] lg:hidden z-20 bg-gradient-to-b from-white from-55% to-transparent" />
+        <div className="absolute top-0 left-0 w-full h-[80vw] lg:h-[40vw] z-20 bg-gradient-to-b from-white from-55% to-transparent" />
         {/* Gradient Bottom */}
         <div className="absolute bottom-0 left-0 w-full h-[110vw] lg:h-[40vw] z-20 bg-gradient-to-t from-white via-white to-transparent" />
 
@@ -71,7 +71,7 @@ const Dresscode = () => {
           alt=""
           width={147}
           height={108}
-          className="absolute top-[2%]  w-[18vw] left-[4vw] z-40 lg:hidden"
+          className="absolute top-[2%]  w-[18vw] left-[4vw] z-40 lg:top-[4.5%]  lg:w-[9vw]"
         />
 
         {/* KERANG KANAN TENGAH */}
@@ -129,6 +129,20 @@ const Dresscode = () => {
             maxWidth: "none",
           }}
         />
+
+        {/* ASET ATAS DEKSTOP */}
+      <img
+        src="/images/Dresscode/dekstop/Aset-Atas.webp"
+        alt="Pohon Kanan Bawah"
+        className="absolute -top-[0vw] z-[50] hidden lg:block"
+        style={{
+          width: "115vw",
+          height: "auto",
+          left: "45%",
+          transform: "translateX(-50%)",
+          maxWidth: "none",
+        }}
+      />
 
         {/* ASET BAWAH DEKSTOP */}
         <img

@@ -39,7 +39,7 @@ const CountDown = () => {
   return (
     <section
       id="countdown"
-      className="relative w-full pt-[55px] pb-[51px] lg:pt-[5.291vw] lg:pb-[3.968vw] bg-[#805A2D]"
+      className="relative w-full pt-[55px] pb-[51px] lg:pt-[3.7vw] lg:pb-[3.968vw] bg-[#805A2D]"
     >
       <div className="relative z-10">
         <h1 className="font-bigCaslon text-[20px] lg:text-[2.116vw] text-white text-center uppercase">

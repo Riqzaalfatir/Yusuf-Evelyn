@@ -35,7 +35,10 @@ const Wishes = () => {
   };
 
   return (
-    <section id="wishes" className="relative w-full overflow-y-hidden overflow-x-hidden">
+    <section
+      id="wishes"
+      className="relative w-full overflow-y-hidden overflow-x-hidden"
+    >
       <Image
         src="/images/About/Bg-Marmer.svg"
         alt="Bg Marmer"
@@ -44,10 +47,9 @@ const Wishes = () => {
       />
 
       {/* Gradient Top */}
-        <div className="absolute top-0 left-0 w-full h-[60vw] lg:h-[35vw] z-20 bg-gradient-to-b from-white from-55% to-transparent" />
-        {/* Gradient Bottom */}
-        <div className="absolute bottom-0 left-0 w-full h-[110vw] lg:hidden z-20 bg-gradient-to-t from-white via-white to-transparent" />
-
+      <div className="absolute top-0 left-0 w-full h-[60vw] lg:h-[35vw] z-20 bg-gradient-to-b from-white from-55% to-transparent" />
+      {/* Gradient Bottom */}
+      <div className="absolute bottom-0 left-0 w-full h-[110vw] lg:hidden z-20 bg-gradient-to-t from-white via-white to-transparent" />
 
       {/* ORNAMENT */}
       {/* Layer Atas */}
@@ -97,7 +99,7 @@ const Wishes = () => {
         height={356}
         className="absolute -bottom-[7vw] w-[39vw] left-[0vw] z-[55]"
       /> */}
-      
+
       {/* BINTANG KERANG BAWAH KANAN  */}
       {/* <Image
         src="/images/Wishes/Bintang-Kerang.webp"
@@ -108,34 +110,34 @@ const Wishes = () => {
       /> */}
 
       {/* ASET ATAS */}
-       <img
-          src="/images/Wishes/Aset-Atass.webp"
-          alt="Pohon Kanan Bawah"
-          className="absolute top-[0vw] z-[50]  pointer-events-none lg:hidden"
-          style={{
-            width: "125vw",
-            height: "auto",
-            left: "42%",
-            transform: "translateX(-50%)",
-            maxWidth: "none",
-          }}
-        />
+      <img
+        src="/images/Wishes/Aset-Atass.webp"
+        alt="Pohon Kanan Bawah"
+        className="absolute top-[0vw] z-[50]  pointer-events-none lg:hidden"
+        style={{
+          width: "125vw",
+          height: "auto",
+          left: "42%",
+          transform: "translateX(-50%)",
+          maxWidth: "none",
+        }}
+      />
 
       {/* ASET BAWAH */}
-       <img
-          src="/images/Wishes/Aset-Bawah.webp"
-          alt="Pohon Kanan Bawah"
-          className="absolute -bottom-[10vw] z-[50] pointer-events-none lg:hidden"
-          style={{
-            width: "143vw",
-            height: "auto",
-            left: "46%",
-            transform: "translateX(-50%)",
-            maxWidth: "none",
-          }}
-        />
+      <img
+        src="/images/Wishes/Aset-Bawah.webp"
+        alt="Pohon Kanan Bawah"
+        className="absolute -bottom-[10vw] z-[50] pointer-events-none lg:hidden"
+        style={{
+          width: "143vw",
+          height: "auto",
+          left: "46%",
+          transform: "translateX(-50%)",
+          maxWidth: "none",
+        }}
+      />
 
-        {/* ASET ATAS DEKSTOP */}
+      {/* ASET ATAS DEKSTOP */}
       <img
         src="/images/Wishes/dekstop/Aset-Atas.webp"
         alt="Pohon Kanan Bawah"
@@ -149,43 +151,40 @@ const Wishes = () => {
         }}
       />
 
-          {/* ASET BAWAH DEKSTOP */}
-        <img
-          src="/images/Wishes/dekstop/Aset-Bawah.webp"
-          alt="Pohon Kanan Bawah"
-          className="absolute -bottom-[7.5vw] z-[50]   opacity-90"
-          style={{
-            width: "120vw",
-            height: "auto",
-            left: "49%",
-            transform: "translateX(-50%)",
-            maxWidth: "none",
-          }}
-        />
+      {/* ASET BAWAH DEKSTOP */}
+      <img
+        src="/images/Wishes/dekstop/Aset-Bawah.webp"
+        alt="Pohon Kanan Bawah"
+        className="absolute -bottom-[7.5vw] z-[50]   opacity-90"
+        style={{
+          width: "120vw",
+          height: "auto",
+          left: "49%",
+          transform: "translateX(-50%)",
+          maxWidth: "none",
+        }}
+      />
 
       {/* Konten */}
       <div className="relative z-60 flex flex-col items-center text-center px-[8.5vw] lg:px-[6.55vw]">
-
-         {/* KOTAK — absolute, z rendah → ketutup gradient ✅ */}
-          <div
-            className="absolute inset-0 bg-white inset-x-[8.5vw] lg:inset-x-[6.55vw]"
-            style={{ boxShadow: "0px 4px 14.5px 0px rgba(0,0,0,0.62)" }}
-          />
-
+        {/* KOTAK — absolute, z rendah → ketutup gradient ✅ */}
         <div
-          className="relative z-[90] w-full px-[4.4vw] pt-[30vw] pb-[50.26vw] lg:pt-[9.986vw]  lg:pb-[22.487vw] lg:px-[1.32vw] flex flex-col items-center"
-        >
+          className="absolute inset-0 bg-white inset-x-[8.5vw] lg:inset-x-[6.55vw]"
+          style={{ boxShadow: "0px 4px 14.5px 0px rgba(0,0,0,0.62)" }}
+        />
+
+        <div className="relative z-[90] w-full px-[4.4vw] pt-[30vw] pb-[50.26vw] lg:pt-[9.986vw]  lg:pb-[22.487vw] lg:px-[1.32vw] flex flex-col items-center">
           <h2 className="font-bigCaslon text-[24px] lg:text-[2.116vw] text-[#937E5B] uppercase">
             Share Your Wishes
           </h2>
 
           <Image
-                     src="/images/EventOrder/Row.webp"
-                     alt="ornament"
-                     width={556}
-                     height={21}
-                     className="pt-[5px] lg:pt-[1vw] w-[156px] lg:w-[12.3vw]"
-                   />
+            src="/images/EventOrder/Row.webp"
+            alt="ornament"
+            width={556}
+            height={21}
+            className="pt-[5px] lg:pt-[1vw] w-[156px] lg:w-[12.3vw]"
+          />
 
           <div className="w-full max-w-[284px] lg:max-w-[37.302vw] flex flex-col gap-[20px] lg:gap-[0px] mt-[47px] lg:mt-[66px]">
             <input
@@ -204,70 +203,72 @@ const Wishes = () => {
 
             <button
               onClick={handleSubmit}
-              className="bg-[#937E5B] w-full rounded-full h-[33px] lg:h-[2.646vw] text-[12px] lg:text-[1.323vw] lg:mt-[1.323vw] font-ovo uppercase flex items-center justify-center gap-1.5 text-white"
+              className="bg-[#937E5B] w-full rounded-full h-[33px] lg:h-[2.646vw] text-[12px] lg:text-[1.323vw] lg:mt-[1.323vw] font-ovo uppercase flex items-center justify-center gap-1.5 lg:gap-2 text-white"
             >
               <Image
-                src="/images/Wishes/Panah.svg"
+                src="/images/Wishes/Panah.webp"
                 alt="Kirim"
                 width={50}
                 height={50}
-                className="object-contain w-[17px] lg:w-[1.323vw]"
+                className="object-contain w-[17px] lg:w-[1.4vw]"
               />
               Send
             </button>
 
-      {/* List pesan */}
-<div
-  className={`w-full lg:h-[34.788vw] overflow-y-auto scrollbar-hide lg:mt-[2.579vw] ${
-    showAll
-      ? "h-[320px] bg-transparent"
-      : "h-[320px] bg-[#937E5B] rounded-2xl"
-  }`}
->
-  {!showAll ? (
-    <div>
-      <div className="sticky top-0 w-full h-[18px] bg-[#937E5B] z-10" />
-      <div className="px-[13px] lg:px-[1.521vw] py-[2px] text-left">
-        {pesanList.slice(0, 8).map((item, index, array) => (
-          <div key={item.id}>
-            <p className="text-white font-ovo text-[14px] lg:text-[1.323vw] mb-[2px]">
-              {item.nama}
-            </p>
-            <p className="text-white font-ovo text-[12px] lg:text-[1.323vw] tracking-[0.5px] mb-[0.661vw]">
-              {item.pesan}
-            </p>
-            {index !== array.length - 1 && (
-              <div className="border-t border-white/40 mt-[8px] mb-[15px]" />
-            )}
-          </div>
-        ))}
-      </div>
-      <div className="sticky bottom-0 w-full h-[18px] bg-[#937E5B] z-10" />
-    </div>
-  ) : (
-    <div className="grid grid-cols-2 gap-[2.5vw] lg:gap-[1vw] items-stretch">
-  {pesanList.map((item) => (
-    <div
-      key={item.id}
-      onClick={() => setSelectedMessage(item)}
-      className="rounded-xl overflow-hidden shadow-md bg-[#937E5B] flex flex-col cursor-pointer active:scale-95 transition-transform duration-150 h-full"
-    >
-          <div className="p-[10px] lg:p-[15px] relative flex-1 flex flex-col justify-center">
-            <p className="absolute top-[6px] left-[8px] text-[28px] font-bold font-bigCaslon text-white/30 leading-none">"</p>
-            <p className="font-ovo text-[10px] lg:text-[1.2w] text-white/90 text-center mt-5 mb-2 line-clamp-4 leading-[14px] lg:leading-[1.2vw]">
-              {item.pesan}
-            </p>
-          </div>
-          <div className="bg-[#7A6240] py-[8px] flex items-center justify-center px-4">
-            <p className="text-white/90 text-center line-clamp-1 text-[10px] lg:text-[1vw] font-ovo">
-              — {item.nama}
-            </p>
-          </div>
-        </div>
-      ))}
-    </div>
-  )}
-</div>
+            {/* List pesan */}
+            <div
+              className={`w-full lg:h-[34.788vw] overflow-y-auto scrollbar-hide lg:mt-[2.579vw] ${
+                showAll
+                  ? "h-[320px] bg-transparent"
+                  : "h-[320px] bg-[#937E5B] rounded-2xl"
+              }`}
+            >
+              {!showAll ? (
+                <div>
+                  <div className="sticky top-0 w-full h-[18px] bg-[#937E5B] z-10" />
+                  <div className="px-[13px] lg:px-[1.521vw] py-[2px] text-left">
+                    {pesanList.slice(0, 8).map((item, index, array) => (
+                      <div key={item.id}>
+                        <p className="text-white font-ovo text-[14px] lg:text-[1.323vw] mb-[2px]">
+                          {item.nama}
+                        </p>
+                        <p className="text-white font-ovo text-[12px] lg:text-[1.323vw] tracking-[0.5px] mb-[0.661vw]">
+                          {item.pesan}
+                        </p>
+                        {index !== array.length - 1 && (
+                          <div className="border-t border-white/40 mt-[8px] mb-[15px]" />
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                  <div className="sticky bottom-0 w-full h-[18px] bg-[#937E5B] z-10" />
+                </div>
+              ) : (
+                <div className="grid grid-cols-2 gap-[2.5vw] lg:gap-[1vw] items-stretch">
+                  {pesanList.map((item) => (
+                    <div
+                      key={item.id}
+                      onClick={() => setSelectedMessage(item)}
+                      className="rounded-xl overflow-hidden shadow-md bg-[#937E5B] flex flex-col cursor-pointer active:scale-95 transition-transform duration-150 h-full"
+                    >
+                      <div className="p-[10px] lg:p-[15px] relative flex-1 flex flex-col justify-center">
+                        <p className="absolute top-[6px] left-[8px] text-[28px] font-bold font-bigCaslon text-white/30 leading-none">
+                          "
+                        </p>
+                        <p className="font-ovo text-[10px] lg:text-[1.2w] text-white/90 text-center mt-5 mb-2 line-clamp-4 leading-[14px] lg:leading-[1.2vw]">
+                          {item.pesan}
+                        </p>
+                      </div>
+                      <div className="bg-[#7A6240] py-[8px] flex items-center justify-center px-4">
+                        <p className="text-white/90 text-center line-clamp-1 text-[10px] lg:text-[1vw] font-ovo">
+                          — {item.nama}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
 
             <WishesCard
               data={selectedMessage}
@@ -276,15 +277,13 @@ const Wishes = () => {
 
             <button
               onClick={() => setShowAll(!showAll)}
-              className="bg-[#937E5B] w-full rounded-full h-[33px] lg:h-[2.646vw] text-[12px] lg:text-[1.323vw] lg:mt-[1.323vw] font-ovo uppercase flex items-center justify-center gap-1.5 text-white"
+              className="bg-[#937E5B] w-full rounded-full h-[33px] lg:h-[2.646vw] text-[12px] lg:text-[1.323vw] lg:mt-[1.323vw] font-ovo uppercase flex items-center justify-center gap-1.5 lg:gap-2.5 text-white"
             >
-              <Image
-                src="/images/Wishes/Pesan.svg"
-                alt="Pesan"
-                width={55}
-                height={55}
-                className="object-cover w-[15px] lg:w-[1.323vw]"
-              />
+              <img
+  src="/images/Wishes/Pesan.webp"
+  alt="Pesan"
+  className="w-[15px] lg:w-[1.4vw]"
+/>
               {showAll ? "BACK" : "VIEW ALL MESSAGES"}
             </button>
           </div>

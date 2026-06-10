@@ -200,7 +200,9 @@ const EventOrder = () => {
             </a>
           </div>
 
+          <div className="w-full flex justify-center">
           <div className="w-3 h-3 lg:w-[1.058vw] lg:h-[1.058vw] rounded-full bg-[#937E5B] mt-[36px] mb-[30px] lg:mt-[4.762vw] lg:mb-[5.026vw]  mx-auto" />
+          </div>
 
           {/* SATURDAY 8 AGUSTUS */}
           <div className="flex flex-col items-center justify-center leading-none">
@@ -262,7 +264,9 @@ const EventOrder = () => {
             </a>
           </div>
 
+        <div className="w-full flex justify-center">
           <div className="w-3 h-3 lg:w-[1.058vw] lg:h-[1.058vw] rounded-full bg-[#937E5B] mt-[38px] mb-[23px] lg:mt-[4.762vw] lg:mb-[5.026vw] mx-auto" />
+          </div>
 
           {/* SUNDAY  9 AGUSTUS */}
           <div className="flex flex-col items-center justify-center leading-none">
