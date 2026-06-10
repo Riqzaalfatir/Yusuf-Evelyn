@@ -2,272 +2,283 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeUp } from "@/lib/animation";
+import useIsMobile from "@/hooks/useIsMobile";
 
 const About = () => {
+  const isMobile = useIsMobile();
+
   return (
     <section
       id="tentang"
       className="relative w-full overflow-y-hidden overflow-x-hidden"
     >
-      <Image
-        alt="Bg Marmer"
-        src="/images/About/Bg-Marmer.svg"
-        fill
-        className="object-cover object-bottom lg:hidden"
-      />
-
-      <Image
-        alt="Bg Marmer"
-        src="/images/About/dekstop/Bg-Marmer.svg"
-        fill
-        className="object-cover object-bottom hidden lg:block"
-      />
+      {/* BG MARMER */}
+      {isMobile === null ? null : isMobile ? (
+        <Image
+          alt="Bg Marmer"
+          src="/images/About/Bg-Marmer.svg"
+          fill
+          className="object-cover object-bottom"
+        />
+      ) : (
+        <Image
+          alt="Bg Marmer"
+          src="/images/About/dekstop/Bg-Marmer.svg"
+          fill
+          className="object-cover object-bottom"
+        />
+      )}
 
       {/* Gradient Top */}
       <div className="absolute top-0 left-0 w-full h-[65vw] lg:h-[43vw]  z-20 bg-gradient-to-b from-white from-55% to-transparent" />
       {/* Gradient Bottom */}
       <div className="absolute bottom-0 left-0 w-full h-[75vw] lg:h-[45vw]  z-20 bg-gradient-to-t from-white via-white to-transparent" />
 
-      <Image
-        src="/images/About/Ranting.webp"
-        alt=""
-        width={147}
-        height={108}
-        className="absolute top-[53%]  w-[30vw] right-0 z-20 lg:hidden"
-      />
+      {/* RANTING */}
+      {isMobile === null ? null : isMobile ? (
+        <Image
+          src="/images/About/Ranting.webp"
+          alt=""
+          width={147}
+          height={108}
+          className="absolute top-[53%] w-[30vw] right-0 z-20"
+        />
+      ) : (
+        <Image
+          src="/images/About/dekstop/Ranting.webp"
+          alt=""
+          width={147}
+          height={108}
+          className="absolute top-[40.5%] w-[15vw] right-0 z-20"
+        />
+      )}
 
-      <Image
-        src="/images/About/dekstop/Ranting.webp"
-        alt=""
-        width={147}
-        height={108}
-        className="absolute top-[40.5%] w-[15vw] right-0 z-20 hidden lg:block"
-      />
+      {/* ASET ATAS */}
+      {isMobile === null ? null : isMobile ? (
+        <img
+          src="/images/About/Aset-Atas.webp"
+          alt=""
+          className="absolute -top-[1vw] z-[50] pointer-events-none"
+          style={{
+            width: "140vw",
+            height: "auto",
+            left: "67%",
+            transform: "translateX(-50%)",
+            maxWidth: "none",
+          }}
+        />
+      ) : (
+        <img
+          src="/images/About/dekstop/Aset-Atas.webp"
+          alt=""
+          className="absolute -top-[1vw] z-[50]"
+          style={{
+            width: "102vw",
+            height: "auto",
+            left: "49.5%",
+            transform: "translateX(-50%)",
+            maxWidth: "none",
+          }}
+        />
+      )}
 
-      {/* ASET ATAS MOBILE */}
-      <img
-        src="/images/About/Aset-Atas.webp"
-        alt="Pohon Kanan Bawah"
-        className="absolute -top-[1vw] z-[50] lg:hidden pointer-events-none"
-        style={{
-          width: "140vw",
-          height: "auto",
-          left: "67%",
-          transform: "translateX(-50%)",
-          maxWidth: "none",
-        }}
-      />
-
-      {/* ASET BAWAH MOBILE */}
-      <img
-        src="/images/About/Aset-Bawah.webp"
-        alt="Pohon Kanan Bawah"
-        className="absolute -bottom-[2vw] z-[50] lg:hidden pointer-events-none"
-        style={{
-          width: "140vw",
-          height: "auto",
-          left: "36%",
-          transform: "translateX(-50%)",
-          maxWidth: "none",
-        }}
-      />
-
-      {/* ASET ATAS DEKSTOP */}
-      <img
-        src="/images/About/dekstop/Aset-Atas.webp"
-        alt="Pohon Kanan Bawah"
-        className="absolute -top-[1vw] z-[50] hidden lg:block"
-        style={{
-          width: "102vw",
-          height: "auto",
-          left: "49.5%",
-          transform: "translateX(-50%)",
-          maxWidth: "none",
-        }}
-      />
-
-      {/* ASET BAWAH DEKSTOP */}
-      <img
-        src="/images/About/dekstop/Aset-Bawahh.webp"
-        alt="Pohon Kanan Bawah"
-        className="absolute -bottom-[0vw] z-[50] hidden lg:block opacity-90"
-        style={{
-          width: "120vw",
-          height: "auto",
-          left: "41%",
-          transform: "translateX(-50%)",
-          maxWidth: "none",
-        }}
-      />
+      {/* ASET BAWAH */}
+      {isMobile === null ? null : isMobile ? (
+        <img
+          src="/images/About/Aset-Bawah.webp"
+          alt=""
+          className="absolute -bottom-[2vw] z-[50] pointer-events-none"
+          style={{
+            width: "140vw",
+            height: "auto",
+            left: "36%",
+            transform: "translateX(-50%)",
+            maxWidth: "none",
+          }}
+        />
+      ) : (
+        <img
+          src="/images/About/dekstop/Aset-Bawahh.webp"
+          alt=""
+          className="absolute -bottom-[0vw] z-[50] opacity-90"
+          style={{
+            width: "120vw",
+            height: "auto",
+            left: "41%",
+            transform: "translateX(-50%)",
+            maxWidth: "none",
+          }}
+        />
+      )}
 
       {/* Konten KOTAK */}
       <div className="relative z-60 flex flex-col items-center text-center pt-[8vw] px-[8.5vw] lg:pt-0 lg:px-[6.55vw]">
-  <div
-    className="absolute inset-0 bg-white inset-x-[8.5vw] lg:inset-x-[6.55vw]"
-    style={{ boxShadow: "0px 4px 14.5px 0px rgba(0,0,0,0.62)" }}
-  />
+        <div
+          className="absolute inset-0 bg-white inset-x-[8.5vw] lg:inset-x-[6.55vw]"
+          style={{ boxShadow: "0px 4px 14.5px 0px rgba(0,0,0,0.62)" }}
+        />
 
-  <div className="relative z-[90] w-full px-[4.4vw] pt-[21.8vw] pb-[45.9vw] lg:pt-[15vw] lg:pb-[25.13vw] lg:px-[1.32vw] flex flex-col items-center">
-    <motion.p
-      variants={fadeUp}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 3, ease: "easeOut" }}
-      className="font-ovo text-[14px] lg:text-[1.32vw] text-[#937E5B]"
-    >
-      "From His fullness we have all received,
-      <br />
-      grace upon grace."
-      <span className="block pt-[6vw] lg:pt-[1.5vw]">John 1:16</span>
-    </motion.p>
+        <div className="relative z-[90] w-full px-[4.4vw] pt-[21.8vw] pb-[45.9vw] lg:pt-[15vw] lg:pb-[25.13vw] lg:px-[1.32vw] flex flex-col items-center">
+          <motion.p
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut" }}
+            className="font-ovo text-[14px] lg:text-[1.32vw] text-[#937E5B]"
+          >
+            "From His fullness we have all received,
+            <br />
+            grace upon grace."
+            <span className="block pt-[6vw] lg:pt-[1.5vw]">John 1:16</span>
+          </motion.p>
 
-    <motion.div
-      variants={fadeUp}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
-    >
-      <Image
-        src="/images/About/Kerang.webp"
-        alt="ornament"
-        width={175}
-        height={175}
-        className="pt-[6.4vw] lg:pt-[3.7vw] w-[75px] lg:w-[6.61vw]"
-      />
-    </motion.div>
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
+          >
+            <Image
+              src="/images/About/Kerang.webp"
+              alt="ornament"
+              width={175}
+              height={175}
+              className="pt-[6.4vw] lg:pt-[3.7vw] w-[75px] lg:w-[6.61vw]"
+            />
+          </motion.div>
 
-    <motion.p
-      variants={fadeUp}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
-      className="font-century text-[14px] lg:text-[1.32vw] text-[#937E5B] pt-[32px] lg:pt-[3.2vw]"
-    >
-      We request the honour of your presence <br className="lg:hidden" />
-      at the wedding of <br />
-      our beloved son and daughter
-    </motion.p>
+          <motion.p
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
+            className="font-century text-[14px] lg:text-[1.32vw] text-[#937E5B] pt-[32px] lg:pt-[3.2vw]"
+          >
+            We request the honour of your presence <br className="lg:hidden" />
+            at the wedding of <br />
+            our beloved son and daughter
+          </motion.p>
 
-    <div className="lg:flex lg:flex-row lg:items-center lg:justify-center lg:mt-[4.04vw] lg:gap-[12.7vw]">
-      {/* FOTO COWO */}
-      <div className="flex flex-col items-center leading-none mt-[26px] lg:mt-0">
-        <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 3, ease: "easeOut" }}
-          className="rounded-full overflow-hidden w-[200px] h-[261px] lg:w-[17.13vw] lg:h-[22.42vw]"
-        >
-          <Image
-            src="/images/About/Pengantin-Lakilaki.svg"
-            alt="Jusuf Aurum Merukh"
-            width={400}
-            height={461}
-            className="object-cover w-full h-full"
-          />
-        </motion.div>
-        <motion.h2
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 3, ease: "easeOut" }}
-          className="font-bigCaslon text-[20px] lg:text-[2.12vw] text-[#937E5B] pt-[41px]"
-        >
-          JUSUF AURUM MERUKH
-        </motion.h2>
-        <motion.p
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 3, ease: "easeOut" }}
-          className="font-ovo text-[13px] lg:text-[1.19vw] text-[#937E5B] pt-[20px] lg:pt-[3.5vw]"
-        >
-          The Son of
-        </motion.p>
-        <motion.p
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 3, ease: "easeOut" }}
-          className="font-ovo text-[14px] lg:text-[1.19vw] text-[#937E5B] pt-[14px] lg:pt-[1.5vw] leading-[25px] lg:leading-[1.8vw]"
-        >
-          Mr. RUDOLF JOHANES MERUKH and
-          <span className="block">Mrs. ALLENDINE ZUSANE LUNTUNGAN</span>
-        </motion.p>
+          <div className="lg:flex lg:flex-row lg:items-center lg:justify-center lg:mt-[4.04vw] lg:gap-[12.7vw]">
+            {/* FOTO COWO */}
+            <div className="flex flex-col items-center leading-none mt-[26px] lg:mt-0">
+              <motion.div
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 3, ease: "easeOut" }}
+                className="rounded-full overflow-hidden w-[200px] h-[261px] lg:w-[17.13vw] lg:h-[22.42vw]"
+              >
+                <Image
+                  src="/images/About/Pengantin-Lakilaki.svg"
+                  alt="Jusuf Aurum Merukh"
+                  width={400}
+                  height={461}
+                  className="object-cover w-full h-full"
+                />
+              </motion.div>
+              <motion.h2
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 3, ease: "easeOut" }}
+                className="font-bigCaslon text-[20px] lg:text-[2.12vw] text-[#937E5B] pt-[41px]"
+              >
+                JUSUF AURUM MERUKH
+              </motion.h2>
+              <motion.p
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 3, ease: "easeOut" }}
+                className="font-ovo text-[13px] lg:text-[1.19vw] text-[#937E5B] pt-[20px] lg:pt-[3.5vw]"
+              >
+                The Son of
+              </motion.p>
+              <motion.p
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 3, ease: "easeOut" }}
+                className="font-ovo text-[14px] lg:text-[1.19vw] text-[#937E5B] pt-[14px] lg:pt-[1.5vw] leading-[25px] lg:leading-[1.8vw]"
+              >
+                Mr. RUDOLF JOHANES MERUKH and
+                <span className="block">Mrs. ALLENDINE ZUSANE LUNTUNGAN</span>
+              </motion.p>
+            </div>
+
+            {/* FOTO CEWE */}
+            <div className="flex flex-col items-center leading-none mt-[55px] lg:mt-0">
+              <motion.div
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 3, ease: "easeOut" }}
+                className="rounded-full overflow-hidden w-[200px] h-[261px] lg:w-[17.13vw] lg:h-[22.42vw]"
+              >
+                <Image
+                  src="/images/About/Pengantin-Perempuan.svg"
+                  alt="Evelyn Nathania Ovani"
+                  width={500}
+                  height={561}
+                  className="object-cover w-full h-full"
+                />
+              </motion.div>
+              <motion.h2
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 3, ease: "easeOut" }}
+                className="font-bigCaslon text-[20px] lg:text-[2.12vw] text-[#937E5B] pt-[39px]"
+              >
+                EVELYN NATHANIA OVANI
+              </motion.h2>
+              <motion.p
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 3, ease: "easeOut" }}
+                className="font-ovo text-[13px] lg:text-[1.19vw] text-[#937E5B] pt-[20px] lg:pt-[3.5vw]"
+              >
+                The Daughter of
+              </motion.p>
+              <motion.p
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 3, ease: "easeOut" }}
+                className="font-ovo text-[14px] lg:text-[1.19vw] text-[#937E5B] pt-[14px] lg:pt-[1.5vw] leading-[25px] lg:leading-[1.8vw]"
+              >
+                Mr. WIBOWO SANTOSO and
+                <span className="block">Mrs. IMELDA SIEN</span>
+              </motion.p>
+            </div>
+          </div>
+
+          <motion.p
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.4 }}
+            className="font-ovo text-[14px] lg:text-[1.19vw] text-[#937E5B] mt-[46px] lg:mt-[6.2vw]"
+          >
+            We would be honoured <br />
+            by your presence and blessing.
+          </motion.p>
+        </div>
       </div>
-
-      {/* FOTO CEWE */}
-      <div className="flex flex-col items-center leading-none mt-[55px] lg:mt-0">
-        <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 3, ease: "easeOut" }}
-          className="rounded-full overflow-hidden w-[200px] h-[261px] lg:w-[17.13vw] lg:h-[22.42vw]"
-        >
-          <Image
-            src="/images/About/Pengantin-Perempuan.svg"
-            alt="Evelyn Nathania Ovani"
-            width={500}
-            height={561}
-            className="object-cover w-full h-full"
-          />
-        </motion.div>
-        <motion.h2
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 3, ease: "easeOut" }}
-          className="font-bigCaslon text-[20px] lg:text-[2.12vw] text-[#937E5B] pt-[39px]"
-        >
-          EVELYN NATHANIA OVANI
-        </motion.h2>
-        <motion.p
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 3, ease: "easeOut" }}
-          className="font-ovo text-[13px] lg:text-[1.19vw] text-[#937E5B] pt-[20px] lg:pt-[3.5vw]"
-        >
-          The Daughter of
-        </motion.p>
-        <motion.p
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 3, ease: "easeOut" }}
-          className="font-ovo text-[14px] lg:text-[1.19vw] text-[#937E5B] pt-[14px] lg:pt-[1.5vw] leading-[25px] lg:leading-[1.8vw]"
-        >
-          Mr. WIBOWO SANTOSO and
-          <span className="block">Mrs. IMELDA SIEN</span>
-        </motion.p>
-      </div>
-    </div>
-
-    <motion.p
-      variants={fadeUp}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
-      className="font-ovo text-[14px] lg:text-[1.19vw] text-[#937E5B] mt-[46px] lg:mt-[6.2vw]"
-    >
-      We would be honoured <br />
-      by your presence and blessing.
-    </motion.p>
-  </div>
-</div>
     </section>
   );
 };

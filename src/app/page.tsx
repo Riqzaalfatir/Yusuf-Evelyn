@@ -33,6 +33,7 @@ export default function Home() {
   return (
     <>
       <main className="block">
+        <Header />
         <Hero start={start} />
         <About />
         <Countdown />

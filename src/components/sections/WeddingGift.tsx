@@ -2,6 +2,9 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import useIsMobile from "@/hooks/useIsMobile";
+import { motion } from "framer-motion";
+import { fadeUp, fadeRight, fadeLeft } from "@/lib/animation";
 
 const gifts = [
   {
@@ -38,31 +41,60 @@ const WeddingGift = () => {
 
       {/* Konten */}
       <div className="relative z-10 flex flex-col items-center text-center px-8 text-white pt-[136px] pb-[130px] lg:pt-[11vw]  lg:pb-[11.640vw]">
-        <h2 className="text-[24px] lg:text-[2.116vw] font-bigCaslon tracking-wide text-white uppercase">
+        <motion.h2
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 3, ease: "easeOut" }}
+          className="text-[24px] lg:text-[2.116vw] font-bigCaslon tracking-wide text-white uppercase"
+        >
           Wedding Gift
-        </h2>
+        </motion.h2>
 
-        <Image
-          src="/images/WeddingGift/Row.webp"
-          alt="ornament"
-          width={556}
-          height={21}
-          className="pt-[5px] lg:pt-[1vw] w-[156px] lg:w-[12.302vw]"
-        />
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 3, ease: "easeOut" }}
+        >
+          <Image
+            src="/images/WeddingGift/Row.webp"
+            alt="ornament"
+            width={556}
+            height={21}
+            className="pt-[5px] lg:pt-[1vw] w-[156px] lg:w-[12.302vw]"
+          />
+        </motion.div>
 
-        <p className="text-[14px] lg:text-[1.323vw] font-ovo text-white mt-[38px] lg:mt-[4vw] tracking-wide">
+        <motion.p
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 3, ease: "easeOut" }}
+          className="text-[14px] lg:text-[1.323vw] font-ovo text-white mt-[38px] lg:mt-[4vw] tracking-wide"
+        >
           Your presence and prayers
           <br />
           are the greatest blessing to us.
-        </p>
+        </motion.p>
 
-        <p className="text-[14px] lg:text-[1.323vw] font-ovo text-white tracking-wide mt-[12px] lg:mt-[2vw]">
+        <motion.p
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 3, ease: "easeOut" }}
+          className="text-[14px] lg:text-[1.323vw] font-ovo text-white tracking-wide mt-[12px] lg:mt-[2vw]"
+        >
           Should you wish to honor us with a gift,
           <br />
           please find the details below
           <br />
           for your convenience.
-        </p>
+        </motion.p>
 
         {/* List rekening */}
         <div className="w-full max-w-[224px] lg:max-w-[25.926vw] flex flex-col gap-6 lg:gap-4 mt-[46px] lg:mt-[3.704vw]">
@@ -70,24 +102,57 @@ const WeddingGift = () => {
             <div key={index} className="w-full">
               <div className="flex items-center justify-between tracking-wide">
                 <div className="text-left">
-                  <p className="text-[14px] lg:text-[1.323vw] font-ovo text-white">
+                  <motion.p
+                    variants={fadeRight}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 2.5, ease: "easeOut" }}
+                    className="text-[14px] lg:text-[1.323vw] font-ovo text-white"
+                  >
                     {gift.bank}
-                  </p>
-                  <p className="text-[14px] lg:text-[1.323vw] font-ovo text-white">
+                  </motion.p>
+                  <motion.p
+                    variants={fadeRight}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 2.5, ease: "easeOut" }}
+                    className="text-[14px] lg:text-[1.323vw] font-ovo text-white"
+                  >
                     {gift.number}
-                  </p>
-                  <p className="text-[14px] lg:text-[1.323vw] font-ovo text-white">
+                  </motion.p>
+                  <motion.p
+                    variants={fadeRight}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 2.5, ease: "easeOut" }}
+                    className="text-[14px] lg:text-[1.323vw] font-ovo text-white"
+                  >
                     {gift.name}
-                  </p>
+                  </motion.p>
                 </div>
-                <button
+                <motion.button
+                  variants={fadeLeft}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 2.5, ease: "easeOut" }}
                   onClick={() => handleCopy(gift.number, index)}
                   className="text-[14px] lg:text-[1.323vw] font-ovo tracking-widest pb-[0.5px] border-b border-white transition-opacity hover:opacity-70"
                 >
                   {copied === index ? "COPIED!" : "COPY"}
-                </button>
+                </motion.button>
               </div>
-              <div className="mt-1.5 lg:mt-4 border-b border-white" />
+              <motion.div
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 3, ease: "easeOut" }}
+                className="mt-1.5 lg:mt-4 border-b border-white"
+              />
             </div>
           ))}
         </div>
@@ -97,6 +162,107 @@ const WeddingGift = () => {
 };
 
 export default WeddingGift;
+
+// SEBELUM DI IS MOBILE KAN DAN ANIMASIKAN
+// "use client";
+
+// import React, { useState } from "react";
+// import Image from "next/image";
+
+// const gifts = [
+//   {
+//     bank: "BCA",
+//     number: "1234567891011",
+//     name: "PROVITE",
+//   },
+// ];
+
+// const WeddingGift = () => {
+//   const [copied, setCopied] = useState<number | null>(null);
+
+//   const handleCopy = (number: string, index: number) => {
+//     navigator.clipboard.writeText(number);
+//     setCopied(index);
+//     setTimeout(() => setCopied(null), 2000);
+//   };
+
+//   return (
+//     <section className="relative w-full flex items-start justify-center overflow-hidden">
+//       <img
+//         src="/images/WeddingGift/Pengantin-Gift.webp"
+//         alt="background"
+//         className="absolute inset-0 w-full h-full object-cover"
+//       />
+//       <div
+//         className="absolute inset-0"
+//         style={{
+//           backgroundColor: "#46392270",
+//           backdropFilter: "blur(3.3px)",
+//           WebkitBackdropFilter: "blur(3.3px)",
+//         }}
+//       />
+
+//       {/* Konten */}
+//       <div className="relative z-10 flex flex-col items-center text-center px-8 text-white pt-[136px] pb-[130px] lg:pt-[11vw]  lg:pb-[11.640vw]">
+//         <h2 className="text-[24px] lg:text-[2.116vw] font-bigCaslon tracking-wide text-white uppercase">
+//           Wedding Gift
+//         </h2>
+
+//         <Image
+//           src="/images/WeddingGift/Row.webp"
+//           alt="ornament"
+//           width={556}
+//           height={21}
+//           className="pt-[5px] lg:pt-[1vw] w-[156px] lg:w-[12.302vw]"
+//         />
+
+//         <p className="text-[14px] lg:text-[1.323vw] font-ovo text-white mt-[38px] lg:mt-[4vw] tracking-wide">
+//           Your presence and prayers
+//           <br />
+//           are the greatest blessing to us.
+//         </p>
+
+//         <p className="text-[14px] lg:text-[1.323vw] font-ovo text-white tracking-wide mt-[12px] lg:mt-[2vw]">
+//           Should you wish to honor us with a gift,
+//           <br />
+//           please find the details below
+//           <br />
+//           for your convenience.
+//         </p>
+
+//         {/* List rekening */}
+//         <div className="w-full max-w-[224px] lg:max-w-[25.926vw] flex flex-col gap-6 lg:gap-4 mt-[46px] lg:mt-[3.704vw]">
+//           {gifts.map((gift, index) => (
+//             <div key={index} className="w-full">
+//               <div className="flex items-center justify-between tracking-wide">
+//                 <div className="text-left">
+//                   <p className="text-[14px] lg:text-[1.323vw] font-ovo text-white">
+//                     {gift.bank}
+//                   </p>
+//                   <p className="text-[14px] lg:text-[1.323vw] font-ovo text-white">
+//                     {gift.number}
+//                   </p>
+//                   <p className="text-[14px] lg:text-[1.323vw] font-ovo text-white">
+//                     {gift.name}
+//                   </p>
+//                 </div>
+//                 <button
+//                   onClick={() => handleCopy(gift.number, index)}
+//                   className="text-[14px] lg:text-[1.323vw] font-ovo tracking-widest pb-[0.5px] border-b border-white transition-opacity hover:opacity-70"
+//                 >
+//                   {copied === index ? "COPIED!" : "COPY"}
+//                 </button>
+//               </div>
+//               <div className="mt-1.5 lg:mt-4 border-b border-white" />
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default WeddingGift;
 
 // SEBELUM DI DEKSTOPKAN
 // "use client";
