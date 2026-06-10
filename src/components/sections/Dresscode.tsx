@@ -80,7 +80,7 @@ const Dresscode = () => {
           alt=""
           width={147}
           height={108}
-          className="absolute top-[31%]  w-[19vw] right-[5vw] z-40 lg:hidden"
+          className="absolute top-[31%]  w-[19vw] right-[5vw] lg:top-[33%]  lg:w-[10vw] lg:right-[1.5vw] z-40 "
         />
 
         {/* Layer Bawah */}
@@ -130,12 +130,11 @@ const Dresscode = () => {
           }}
         />
 
-       
         {/* ASET BAWAH DEKSTOP */}
         <img
           src="/images/Dresscode/dekstop/Aset-Bawah.webp"
           alt="Pohon Kanan Bawah"
-          className="absolute -bottom-[0.1vw] z-[50] opacity-90"
+          className="absolute -bottom-[0.1vw] z-[50] hidden lg:block opacity-90"
           style={{
             width: "143vw",
             height: "auto",
@@ -159,13 +158,13 @@ const Dresscode = () => {
                 DRESS CODE
               </h2>
               <Image
-                         src="/images/EventOrder/Row.webp"
-                         alt="ornament"
-                         width={556}
-                         height={21}
-                         className="pt-[10px] lg:pt-[1.720vw] w-[156px] lg:w-[12.302vw]"
-                       />
-              <p className="font-ovo text-[14px] lg:text-[1.323vw] text-[#937E5B] pt-[34px] lg:pt-[62px] tracking-wide leading-[18px] lg:leading-[1.3vw]">
+                src="/images/EventOrder/Row.webp"
+                alt="ornament"
+                width={556}
+                height={21}
+                className="pt-[10px] lg:pt-[1.5vw] w-[156px] lg:w-[12.302vw]"
+              />
+              <p className="font-ovo text-[14px] lg:text-[1.323vw] text-[#937E5B] pt-[34px] lg:pt-[62px] tracking-wide leading-[18px] lg:leading-[1.9vw]">
                 Attire in colors from the suggested <br />
                 palette is greatly appreciated.
               </p>
@@ -181,31 +180,31 @@ const Dresscode = () => {
             {/* RSVP */}
             <div
               id="rsvp"
-              className="flex flex-col items-center justify-center mt-[115px] lg:mt-[11.310vw]"
+              className="flex flex-col items-center justify-center mt-[115px] lg:mt-[11vw]"
             >
               <h2 className="font-bigCaslon text-[24px] lg:text-[2.116vw] text-[#937E5B] uppercase">
                 RSVP
               </h2>
               <Image
-                         src="/images/EventOrder/Row.webp"
-                         alt="ornament"
-                         width={556}
-                         height={21}
-                         className="pt-[3px] lg:pt-[1.720vw] w-[156px] lg:w-[12.302vw]"
-                       />
-              <p className="font-ovo text-[14px] lg:text-[1.323vw] text-[#937E5B] pt-[38px] lg:pt-[4.365vw]">
-                Dear,
+                src="/images/EventOrder/Row.webp"
+                alt="ornament"
+                width={556}
+                height={21}
+                className="pt-[3px] lg:pt-[1vw] w-[156px] lg:w-[12.302vw]"
+              />
+              <p className="font-ovo text-[14px] lg:text-[1.323vw] text-[#937E5B] pt-[38px] lg:pt-[4vw]">
+                Dear Mr. /Mrs. /Ms.
               </p>
-              <p className="font-ovo text-[14px] lg:text-[1.323vw] text-[#937E5B] pt-[26px] lg:pt-[3.175vw]">
+              <p className="font-ovo text-[14px] lg:text-[1.323vw] text-[#937E5B] pt-[26px] lg:pt-[2vw]">
                 Sela
               </p>
-              <p className="font-ovo text-[14px] lg:text-[1.323vw] text-[#937E5B] pt-[24px] lg:pt-[3.175vw] lg:leading-[1.2vw] ">
+              <p className="font-ovo text-[14px] lg:text-[1.323vw] text-[#937E5B] pt-[24px] lg:pt-[3.175vw] lg:leading-[1.9vw] ">
                 Kindly confirm your attendance before <br />
                 27 June 2026
               </p>
 
               {/* BUTTON ATTEND */}
-              <div className="flex items-center justify-center gap-[16px] mt-[39px] lg:mt-[3.109vw]">
+              <div className="flex items-center justify-center gap-[16px] mt-[39px] lg:mt-[2.3vw]">
                 <button
                   onClick={() =>
                     setPilihan(pilihan === "hadir" ? null : "hadir")
@@ -232,7 +231,7 @@ const Dresscode = () => {
 
               <button
                 onClick={handleConfirm}
-                className="w-[222px] h-[33px] lg:h-[2.646vw] lg:w-[24.339vw] bg-[#937E5B] font-ovo text-[14px] lg:text-[1.323vw] text-white uppercase rounded-[71px] mt-[28px] lg:mt-[2.778vw]"
+                className="w-[222px] h-[33px] lg:h-[2.646vw] lg:w-[24.339vw] bg-[#937E5B] font-ovo text-[14px] lg:text-[1.323vw] text-white uppercase rounded-[71px] mt-[28px] lg:mt-[2.5vw]"
               >
                 {pilihan === "hadir"
                   ? "CONFIRM ATTEND"
@@ -241,7 +240,7 @@ const Dresscode = () => {
                     : "CONFIRM"}
               </button>
 
-              <p className="font-ovo text-[12px] lg:text-[1.323vw] text-[#937E5B] mt-[54px] lg:mt-[5.357vw] leading-[15px] lg:leading-[1.3vw] ">
+              <p className="font-ovo text-[12px] lg:text-[1.323vw] text-[#937E5B] mt-[54px] lg:mt-[5.357vw] leading-[15px] lg:leading-[1.9vw] ">
                 If you need assistance with your RSVP, <br />
                 please contact our support team.
               </p>
@@ -257,7 +256,7 @@ const Dresscode = () => {
                   alt="Logo Wa"
                   width={18}
                   height={18}
-                  className="object-contain w-[18px] lg:w-[25px]"
+                  className="object-contain"
                 />
                 CHAT SUPPORT
               </a>

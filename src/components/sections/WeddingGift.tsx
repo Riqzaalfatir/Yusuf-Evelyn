@@ -37,26 +37,26 @@ const WeddingGift = () => {
       />
 
       {/* Konten */}
-      <div className="relative z-10 flex flex-col items-center text-center px-8 text-white pt-[136px] pb-[130px]">
-        <h2 className="text-[24px] font-bigCaslon tracking-wide text-white uppercase">
+      <div className="relative z-10 flex flex-col items-center text-center px-8 text-white pt-[136px] pb-[130px] lg:pt-[11vw]  lg:pb-[11.640vw]">
+        <h2 className="text-[24px] lg:text-[2.116vw] font-bigCaslon tracking-wide text-white uppercase">
           Wedding Gift
         </h2>
 
         <Image
-                   src="/images/EventOrder/Row.webp"
-                   alt="ornament"
-                   width={556}
-                   height={21}
-                   className="pt-[5px] lg:pt-[1.720vw] w-[156px] lg:w-[12.302vw]"
-                 />
+          src="/images/WeddingGift/Row.webp"
+          alt="ornament"
+          width={556}
+          height={21}
+          className="pt-[5px] lg:pt-[1vw] w-[156px] lg:w-[12.302vw]"
+        />
 
-        <p className="text-[14px] font-ovo text-white mt-[38px] tracking-wide">
+        <p className="text-[14px] lg:text-[1.323vw] font-ovo text-white mt-[38px] lg:mt-[4vw] tracking-wide">
           Your presence and prayers
           <br />
           are the greatest blessing to us.
         </p>
 
-        <p className="text-[14px] font-ovo text-white tracking-wide mt-[12px]">
+        <p className="text-[14px] lg:text-[1.323vw] font-ovo text-white tracking-wide mt-[12px] lg:mt-[2vw]">
           Should you wish to honor us with a gift,
           <br />
           please find the details below
@@ -65,25 +65,29 @@ const WeddingGift = () => {
         </p>
 
         {/* List rekening */}
-        <div className="w-full max-w-[224px] flex flex-col gap-6 mt-[46px]">
+        <div className="w-full max-w-[224px] lg:max-w-[25.926vw] flex flex-col gap-6 lg:gap-4 mt-[46px] lg:mt-[3.704vw]">
           {gifts.map((gift, index) => (
             <div key={index} className="w-full">
               <div className="flex items-center justify-between tracking-wide">
                 <div className="text-left">
-                  <p className="text-[14px] font-ovo text-white">{gift.bank}</p>
-                  <p className="text-[14px] font-ovo text-white">
+                  <p className="text-[14px] lg:text-[1.323vw] font-ovo text-white">
+                    {gift.bank}
+                  </p>
+                  <p className="text-[14px] lg:text-[1.323vw] font-ovo text-white">
                     {gift.number}
                   </p>
-                  <p className="text-[14px] font-ovo text-white">{gift.name}</p>
+                  <p className="text-[14px] lg:text-[1.323vw] font-ovo text-white">
+                    {gift.name}
+                  </p>
                 </div>
                 <button
                   onClick={() => handleCopy(gift.number, index)}
-                  className="text-[14px] font-ovo tracking-widest pb-[0.5px] border-b border-white transition-opacity hover:opacity-70"
+                  className="text-[14px] lg:text-[1.323vw] font-ovo tracking-widest pb-[0.5px] border-b border-white transition-opacity hover:opacity-70"
                 >
                   {copied === index ? "COPIED!" : "COPY"}
                 </button>
               </div>
-              <div className="mt-1.5 border-b border-white" />
+              <div className="mt-1.5 lg:mt-4 border-b border-white" />
             </div>
           ))}
         </div>
@@ -93,9 +97,6 @@ const WeddingGift = () => {
 };
 
 export default WeddingGift;
-
-
-
 
 // SEBELUM DI DEKSTOPKAN
 // "use client";

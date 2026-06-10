@@ -26,7 +26,7 @@ const About = () => {
       />
 
       {/* Gradient Top */}
-      <div className="absolute top-0 left-0 w-full h-[65vw] lg:h-[45vw]  z-20 bg-gradient-to-b from-white from-55% to-transparent" />
+      <div className="absolute top-0 left-0 w-full h-[65vw] lg:h-[43vw]  z-20 bg-gradient-to-b from-white from-55% to-transparent" />
       {/* Gradient Bottom */}
       <div className="absolute bottom-0 left-0 w-full h-[75vw] lg:h-[45vw]  z-20 bg-gradient-to-t from-white via-white to-transparent" />
 
@@ -43,7 +43,7 @@ const About = () => {
         alt=""
         width={147}
         height={108}
-        className="absolute top-[40%] w-[15vw] right-0 z-20 hidden lg:block"
+        className="absolute top-[40.5%] w-[15vw] right-0 z-20 hidden lg:block"
       />
 
       {/* ASET ATAS MOBILE */}
@@ -92,7 +92,7 @@ const About = () => {
       <img
         src="/images/About/dekstop/Aset-Bawahh.webp"
         alt="Pohon Kanan Bawah"
-        className="absolute -bottom-[2vw] z-[50] hidden lg:block opacity-90"
+        className="absolute -bottom-[0vw] z-[50] hidden lg:block opacity-90"
         style={{
           width: "120vw",
           height: "auto",
@@ -111,12 +111,12 @@ const About = () => {
         />
 
         {/* ISI KONTEN — sibling kotak, z tinggi → di atas gradient ✅ */}
-        <div className="relative z-[90] w-full px-[4.4vw] pt-[21.8vw] pb-[45.9vw] lg:pt-[15.54vw] lg:pb-[25.13vw] lg:px-[1.32vw] flex flex-col items-center">
+        <div className="relative z-[90] w-full px-[4.4vw] pt-[21.8vw] pb-[45.9vw] lg:pt-[15vw] lg:pb-[25.13vw] lg:px-[1.32vw] flex flex-col items-center">
           <p className="font-ovo text-[14px] lg:text-[1.32vw] text-[#937E5B]">
             "From His fullness we have all received,
             <br />
             grace upon grace."
-            <span className="block pt-[6vw] lg:pt-[20px ]">John 1:16</span>
+            <span className="block pt-[6vw] lg:pt-[1.5vw]">John 1:16</span>
           </p>
 
           <Image
@@ -124,10 +124,10 @@ const About = () => {
             alt="ornament"
             width={175}
             height={175}
-            className="pt-[6.4vw] lg:pt-[20px] w-[75px] lg:w-[6.61vw]"
+            className="pt-[6.4vw] lg:pt-[3.7vw] w-[75px] lg:w-[6.61vw]"
           />
 
-          <p className="font-century text-[14px] lg:text-[1.32vw] text-[#937E5B] pt-[32px]">
+          <p className="font-century text-[14px] lg:text-[1.32vw] text-[#937E5B] pt-[32px] lg:pt-[3.2vw]">
             We request the honour of your presence <br className="lg:hidden" />
             at the wedding of <br />
             our beloved son and daughter
@@ -148,10 +148,10 @@ const About = () => {
               <h2 className="font-bigCaslon text-[20px] lg:text-[2.12vw] text-[#937E5B] pt-[41px]">
                 JUSUF AURUM MERUKH
               </h2>
-              <p className="font-ovo text-[13px] lg:text-[1.19vw] text-[#937E5B] pt-[20px]">
+              <p className="font-ovo text-[13px] lg:text-[1.19vw] text-[#937E5B] pt-[20px] lg:pt-[3.5vw]">
                 The Son of
               </p>
-              <p className="font-ovo text-[14px] lg:text-[1.19vw] text-[#937E5B] pt-[14px] leading-[25px] lg:leading-[1.65vw]">
+              <p className="font-ovo text-[14px] lg:text-[1.19vw] text-[#937E5B] pt-[14px] lg:pt-[1.5vw] leading-[25px] lg:leading-[1.8vw]">
                 Mr. RUDOLF JOHANES MERUKH and
                 <span className="block">Mrs. ALLENDINE ZUSANE LUNTUNGAN</span>
               </p>
@@ -171,17 +171,17 @@ const About = () => {
               <h2 className="font-bigCaslon text-[20px] lg:text-[2.12vw] text-[#937E5B] pt-[39px]">
                 EVELYN NATHANIA OVANI
               </h2>
-              <p className="font-ovo text-[13px] lg:text-[1.19vw] text-[#937E5B] pt-[20px]">
+              <p className="font-ovo text-[13px] lg:text-[1.19vw] text-[#937E5B] pt-[20px] lg:pt-[3.5vw]">
                 The Daughter of
               </p>
-              <p className="font-ovo text-[14px] lg:text-[1.19vw] text-[#937E5B] pt-[14px] leading-[25px] lg:leading-[1.65vw]">
+              <p className="font-ovo text-[14px] lg:text-[1.19vw] text-[#937E5B] pt-[14px] lg:pt-[1.5vw] leading-[25px] lg:leading-[1.8vw]">
                 Mr. WIBOWO SANTOSO and
                 <span className="block">Mrs. IMELDA SIEN</span>
               </p>
             </div>
           </div>
 
-          <p className="font-ovo text-[14px] lg:text-[1.19vw] text-[#937E5B] mt-[46px]">
+          <p className="font-ovo text-[14px] lg:text-[1.19vw] text-[#937E5B] mt-[46px] lg:mt-[6.2vw]">
             We would be honoured <br />
             by your presence and blessing.
           </p>

@@ -21,8 +21,7 @@ const Hero = () => {
           priority
         />
 
-
-      {/* Layer Coklat */}
+        {/* Layer Coklat */}
         <div
           className="absolute top-0 left-0 w-full z-10 lg:hidden"
           style={{
@@ -35,20 +34,20 @@ const Hero = () => {
         <div
           className="absolute top-0 left-0 w-full z-10 hidden lg:block"
           style={{
-            height: "56%",
-            background:
-      "linear-gradient(to bottom, rgba(85,74,56,1) 0%, rgba(85,74,56,0) 100%)",
-          }}
-        />
+  height: "80%",
+  background: "linear-gradient(to bottom, rgba(85,74,56,0.8) 0%, rgba(85,74,56,0) 100%)",
+}}/>
 
-        <div className="absolute inset-0 flex flex-col items-center justify-start pt-[35%] lg:pt-[10%] text-center z-10">
+        <div className="absolute inset-0 flex flex-col items-center justify-start pt-[35%] lg:pt-[15%] text-center z-10">
           <p className="text-white font-ovo text-[14px] lg:text-[20px] tracking-widest">
             The Wedding of
           </p>
-          <h1 className="text-white font-bigCaslon text-[32px] lg:text-[52px]">
+          <h1 className="text-white font-bigCaslon text-[32px] lg:text-[52px] lg:pt-1">
             JUSUF & EVELYN
           </h1>
-          <p className="text-white font-ovo text-[14px] mt-1 lg:text-[20px] lg:mt-0">27 JUNE 2026</p>
+          <p className="text-white font-ovo text-[14px] mt-1 lg:text-[20px] ">
+            27 JUNE 2026
+          </p>
         </div>
       </div>
     </div>

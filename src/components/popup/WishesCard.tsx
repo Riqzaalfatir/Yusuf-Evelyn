@@ -18,7 +18,7 @@ const WishesCard = ({ data, onClose }: WishesCardProps) => {
   return (
     <div
       onClick={onClose}
-      className="fixed flex-col inset-0 flex items-center justify-center bg-black/60 backdrop-blur-sm z-50 px-4"
+      className="fixed inset-0 flex flex-col items-center justify-center bg-black/50 backdrop-blur-sm z-50 px-6"
     >
       <motion.div
         initial={{ opacity: 0, scale: 0.85, y: 40 }}
@@ -26,23 +26,35 @@ const WishesCard = ({ data, onClose }: WishesCardProps) => {
         exit={{ opacity: 0, scale: 0.85 }}
         transition={{ duration: 0.4, ease: "easeOut" }}
         onClick={(e) => e.stopPropagation()}
-        className="bg-[#7A4D2F]/60 rounded-2xl p-6 w-[320px] md:w-[350px] h-[280px] md:h-[350px] text-center shadow-2xl border border-[#FEF8EF]/20 mb-5"
+        className="bg-white/95 rounded-2xl w-full max-w-[320px] lg:max-w-[480px] text-center mb-4"
+        style={{ boxShadow: "0px 4px 24px 0px rgba(147,126,91,0.25)" }}
       >
-        <h3 className="text-[25px] md:text-[28px] text-[#FEF8EF] font-semibold tracking-wide leading-snug font-cylburn">
-          {data.nama}
-        </h3>
-        <div className="w-18 h-[1px] bg-[#FEF8EF] mx-auto my-4 opacity-40 mb-5" />
-        <p className="text-[13px] md:text-[15px] font-creators leading-relaxed mb-6 text-[#FEF8EF]/90 line-clamp-6">
-          {data.pesan}
-        </p>
+        {/* Garis atas */}
+        <div className="w-full h-[5px] rounded-t-2xl bg-gradient-to-r from-[#937E5B] via-[#C4A97D] to-[#937E5B]" />
+
+        <div className="px-8 pt-7 pb-8">
+          <h3 className="font-bigCaslon text-[22px] lg:text-[26px] text-[#937E5B] leading-snug">
+            {data.nama}
+          </h3>
+          <div className="w-[60px] h-[1px] bg-[#937E5B]/40 mx-auto my-4" />
+          <p className="font-ovo text-[13px] lg:text-[15px] text-[#937E5B]/90 leading-[22px] lg:leading-[26px]">
+            {data.pesan}
+          </p>
+        </div>
+
+        {/* Garis bawah */}
+        <div className="w-full h-[5px] rounded-b-2xl bg-gradient-to-r from-[#937E5B] via-[#C4A97D] to-[#937E5B]" />
       </motion.div>
 
-      <button
+      <motion.button
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: "easeOut", delay: 0.1 }}
         onClick={onClose}
-        className="w-[320px] md:w-[350px] bg-[#FEF8EF] hover:bg-[#e8ddd0] active:bg-[#d4c4b0] active:scale-95 transition-all duration-200 text-[#713324] px-6 py-2 rounded-xl text-[12px] font-creators tracking-widest uppercase"
+        className="w-full max-w-[320px] lg:max-w-[480px] bg-[#937E5B] text-white font-ovo uppercase tracking-widest text-[12px] lg:text-[14px] h-[40px] rounded-xl transition-all duration-200 active:scale-95"
       >
         BACK
-      </button>
+      </motion.button>
     </div>
   );
 };
