@@ -13,7 +13,7 @@ const CountDown = () => {
   });
 
   useEffect(() => {
-    const target = new Date("2026-06-27T00:00:00");
+    const target = new Date("2026-08-08T00:00:00");
     const interval = setInterval(() => {
       const now = new Date();
       const diff = target.getTime() - now.getTime();

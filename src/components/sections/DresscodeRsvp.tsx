@@ -66,7 +66,7 @@ const Dresscode = () => {
           alt=""
           width={147}
           height={108}
-          className="absolute top-[2%]  w-[18vw] left-[4vw] z-40 lg:top-[4.5%]  lg:w-[9vw]"
+          className="absolute top-[2%]  w-[18vw] left-[4vw] z-40 lg:top-[4%]  lg:w-[10.5vw]"
         />
 
         {/* KERANG KANAN TENGAH */}
@@ -75,7 +75,7 @@ const Dresscode = () => {
           alt=""
           width={147}
           height={108}
-          className="absolute top-[31%]  w-[19vw] right-[5vw] lg:top-[33%]  lg:w-[10vw] lg:right-[1.5vw] z-40 "
+          className="absolute top-[31%]  w-[19vw] right-[3vw] lg:top-[33%]  lg:w-[10vw] lg:right-[1.5vw] z-40 "
         />
 
         {/* ASET ATAS */}
@@ -143,7 +143,7 @@ const Dresscode = () => {
             style={{ boxShadow: "0px 4px 14.5px 0px rgba(0,0,0,0.62)" }}
           />
 
-          <div className="relative z-[90] w-full px-[4.4vw] pt-[14.62vw] pb-[54.87vw] lg:pt-[15.212vw]  lg:pb-[17.196vw] lg:px-[1.32vw] flex flex-col items-center">
+          <div className="relative z-[90] w-full px-[4.4vw] pt-[14.62vw] pb-[50vw] lg:pt-[15.212vw]  lg:pb-[17.196vw] lg:px-[1.32vw] flex flex-col items-center">
             {/* DRESSCODE */}
             <div className="flex flex-col items-center justify-center leading-none">
               <motion.h2
@@ -181,7 +181,7 @@ const Dresscode = () => {
               >
                 Attire in colors from the suggested <br />
                 palette is greatly appreciated. <br />
-                Men: Business Casual (No Batik)
+                <span className="block mt-[20px] lg:pt-[0.7vw]">Men: Business Casual (No Batik)</span>
               </motion.p>
 
               <motion.div
@@ -196,10 +196,16 @@ const Dresscode = () => {
                   alt="ornament"
                   width={368}
                   height={40}
-                  className="mt-[23px] lg:mt-[50px] w-[180px] lg:w-[24.339vw]"
+                  className="mt-[38px] lg:mt-[2.2vw] w-[180px] lg:w-[24.339vw]"
                 />
               </motion.div>
             </div>
+
+
+
+
+
+
 
             {/* RSVP */}
             <div
@@ -257,7 +263,7 @@ const Dresscode = () => {
                 whileInView="show"
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 3, ease: "easeOut" }}
-                className="font-ovo text-[14px] lg:text-[1.323vw] text-[#937E5B] pt-[24px] lg:pt-[3.175vw] lg:leading-[1.9vw] "
+                className="font-ovo text-[14px] lg:text-[1.323vw] text-[#937E5B] pt-[24px] lg:pt-[2.5vw] lg:leading-[1.9vw] "
               >
                 Kindly confirm your attendance before <br />
                 27 June 2026
@@ -355,7 +361,7 @@ const Dresscode = () => {
                 className="h-[33px] w-[160px] lg:h-[2.646vw] lg:w-[14.021vw] bg-[#12877B] text-white flex items-center justify-center font-ovo text-[14px] lg:text-[1.323vw] rounded-full gap-[6px] mt-[24px] lg:mt-[2.910vw]"
               >
                 <Image
-                  src="/images/Dresscode/Logo-Wa.svg"
+                  src="/images/Dresscode/Logo-Wa.png"
                   alt="Logo Wa"
                   width={18}
                   height={18}

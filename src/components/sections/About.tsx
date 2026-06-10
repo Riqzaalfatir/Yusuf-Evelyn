@@ -41,7 +41,7 @@ const About = () => {
           alt=""
           width={147}
           height={108}
-          className="absolute top-[53%] w-[30vw] right-0 z-20"
+          className="absolute top-[53.5%] w-[30vw] right-0 z-20"
         />
       ) : (
         <Image
@@ -174,7 +174,7 @@ const About = () => {
                 className="rounded-full overflow-hidden w-[200px] h-[261px] lg:w-[17.13vw] lg:h-[22.42vw]"
               >
                 <Image
-                  src="/images/About/Pengantin-Lakilaki.svg"
+                  src="/images/About/Pengantin-LakiLaki.webp"
                   alt="Jusuf Aurum Merukh"
                   width={400}
                   height={461}
@@ -225,7 +225,7 @@ const About = () => {
                 className="rounded-full overflow-hidden w-[200px] h-[261px] lg:w-[17.13vw] lg:h-[22.42vw]"
               >
                 <Image
-                  src="/images/About/Pengantin-Perempuan.svg"
+                  src="/images/About/Pengantin-Perempuan.webp"
                   alt="Evelyn Nathania Ovani"
                   width={500}
                   height={561}
@@ -260,8 +260,8 @@ const About = () => {
                 transition={{ duration: 3, ease: "easeOut" }}
                 className="font-ovo text-[14px] lg:text-[1.19vw] text-[#937E5B] pt-[14px] lg:pt-[1.5vw] leading-[25px] lg:leading-[1.8vw]"
               >
-                Mr. WIBOWO SANTOSO and
-                <span className="block">Mrs. IMELDA SIEN</span>
+                Mr. SUTANDI OVANI and
+                <span className="block">Mrs. LINA OSA</span>
               </motion.p>
             </div>
           </div>

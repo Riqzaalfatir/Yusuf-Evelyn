@@ -61,7 +61,7 @@ const Wishes = () => {
         alt=""
         width={147}
         height={108}
-        className="absolute top-[2%]  w-[20vw]  z-[55] lg:top-[1%]  lg:w-[11vw] lg:left-[5vw]"
+        className="absolute top-[1.5%]  w-[20vw] left-[2.5vw]  z-[55] lg:top-[1%]  lg:w-[11vw] lg:left-[5vw]"
       />
 
       {/* ASET ATAS */}
@@ -111,7 +111,7 @@ const Wishes = () => {
         <img
           src="/images/Wishes/dekstop/Aset-Bawah.webp"
           alt="Pohon Kanan Bawah"
-          className="absolute -bottom-[7.5vw] z-[50]   opacity-90"
+          className="absolute -bottom-[5.7vw] z-[50]   opacity-90"
           style={{
             width: "120vw",
             height: "auto",

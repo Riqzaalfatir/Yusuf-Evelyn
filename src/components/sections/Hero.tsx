@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -12,7 +12,6 @@ const Hero = ({ start }: { start: boolean }) => {
   return (
     <div id="hero">
       <div className="relative w-full overflow-hidden [aspect-ratio:390/844] lg:min-h-screen lg:aspect-auto">
-
         {isMobile === null ? null : isMobile ? (
           <Image
             src="/images/Hero/Pengantin.webp"
@@ -23,7 +22,7 @@ const Hero = ({ start }: { start: boolean }) => {
           />
         ) : (
           <Image
-            src="/images/Hero/Pengantin.svg"
+            src="/images/Hero/dekstop/Bg-Hero.webp"
             alt="Jusuf & Evelyn"
             fill
             className="object-cover object-[50%_80%]"
@@ -31,12 +30,29 @@ const Hero = ({ start }: { start: boolean }) => {
           />
         )}
 
+        <motion.div
+          variants={fadeIn}
+          initial="hidden"
+          animate={start ? "show" : "hidden"}
+          transition={{ duration: 2.5, ease: "easeOut", delay: 0 }}
+            className="absolute top-[9%] left-1/2 -translate-x-1/2 w-[158px] lg:top-[8%] lg:w-[211px] h-auto z-30"
+        >
+          <Image
+            src="/images/Hero/Logo-JE.webp"
+            alt="Provite Logo"
+            width={250}
+            height={250}
+            className="w-full"
+          />
+        </motion.div>
+
         {isMobile ? (
           <div
             className="absolute top-0 left-0 w-full z-10"
             style={{
-              height: "476px",
-              background: "linear-gradient(to bottom, rgba(85,74,56,1) 0%, rgba(85,74,56,0.8) 40%, transparent 100%)",
+              height: "520px",
+              background:
+                "linear-gradient(to bottom, rgba(85,74,56,1) 5%, rgba(85,74,56,0.8) 40%, transparent 100%)",
             }}
           />
         ) : (
@@ -44,12 +60,13 @@ const Hero = ({ start }: { start: boolean }) => {
             className="absolute top-0 left-0 w-full z-10"
             style={{
               height: "80%",
-              background: "linear-gradient(to bottom, rgba(85,74,56,0.8) 0%, rgba(85,74,56,0) 100%)",
+              background:
+                "linear-gradient(to bottom, rgba(85,74,56,0.8) 15%, rgba(85,74,56,0) 100%)",
             }}
           />
         )}
 
-        <div className="absolute inset-0 flex flex-col items-center justify-start pt-[35%] lg:pt-[15%] text-center z-10">
+        <div className="absolute inset-0 flex flex-col items-center justify-start pt-[56.5%] lg:pt-[16%] text-center z-10">
           <motion.p
             variants={fadeIn}
             initial="hidden"
@@ -75,18 +92,15 @@ const Hero = ({ start }: { start: boolean }) => {
             transition={{ duration: 2.8, ease: "easeOut", delay: 0.8 }}
             className="text-white font-ovo text-[14px] mt-1 lg:text-[20px]"
           >
-            27 JUNE 2026
+            08 . 08. 2026
           </motion.p>
         </div>
-
       </div>
     </div>
   );
 };
 
 export default Hero;
-
-
 
 // Sebelum menggunakan use is mobile
 // import React from "react";
