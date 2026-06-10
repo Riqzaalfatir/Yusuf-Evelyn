@@ -7,11 +7,16 @@ const ThankYou: React.FC = () => {
       className="relative w-full overflow-hidden"
       style={{ aspectRatio: "390/801" }}
     >
-      <img
-        src="/images/Thankyou/Pengantin.webp"
-        alt="background"
-        className="absolute inset-0 w-full h-full object-cover object-bottom scale-y-[1.2]"
-      />
+    <img
+  src="/images/Thankyou/Pengantin.webp"
+  alt="background"
+  className="absolute inset-0 w-full object-cover"
+  style={{
+    height: "100%",        // lebih tinggi dari container
+    top: "0",
+    objectPosition: "top", // anchor dari atas
+  }}
+/>
 
       <div
         className="absolute top-0 left-0 w-full z-10"

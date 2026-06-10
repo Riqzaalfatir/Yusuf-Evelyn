@@ -111,7 +111,7 @@ const Wishes = () => {
        <img
           src="/images/Wishes/Aset-Atass.webp"
           alt="Pohon Kanan Bawah"
-          className="absolute top-[0vw] z-[50]"
+          className="absolute top-[0vw] z-[50]  pointer-events-none"
           style={{
             width: "125vw",
             height: "auto",
@@ -125,7 +125,7 @@ const Wishes = () => {
        <img
           src="/images/Wishes/Aset-Bawah.webp"
           alt="Pohon Kanan Bawah"
-          className="absolute -bottom-[10vw] z-[50]"
+          className="absolute -bottom-[10vw] z-[50] pointer-events-none"
           style={{
             width: "143vw",
             height: "auto",
@@ -152,12 +152,12 @@ const Wishes = () => {
           </h2>
 
           <Image
-            src="/images/EventOrder/Row.svg"
-            alt="ornament"
-            width={156}
-            height={21}
-            className="pt-[5px]"
-          />
+                     src="/images/EventOrder/Row.webp"
+                     alt="ornament"
+                     width={556}
+                     height={21}
+                     className="pt-[5px] lg:pt-[1.720vw] w-[156px] lg:w-[12.302vw]"
+                   />
 
           <div className="w-full max-w-[284px] flex flex-col gap-[20px] mt-[47px]">
             <input

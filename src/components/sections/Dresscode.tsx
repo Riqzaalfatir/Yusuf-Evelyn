@@ -30,18 +30,28 @@ const Dresscode = () => {
 
   return (
     <>
-      <section id="dresscode" className="relative w-full overflow-y-hidden overflow-x-hidden">
+      <section
+        id="dresscode"
+        className="relative w-full overflow-y-hidden overflow-x-hidden"
+      >
         <Image
+          alt="Bg Marmer"
           src="/images/About/Bg-Marmer.svg"
-          alt="Marmer Bg"
           fill
-          className="object-cover object-bottom"
+          className="object-cover object-bottom lg:hidden"
+        />
+
+        <Image
+          alt="Bg Marmer"
+          src="/images/About/dekstop/Bg-Marmer.svg"
+          fill
+          className="object-cover object-bottom hidden lg:block"
         />
 
         {/* Gradient Top */}
-        <div className="absolute top-0 left-0 w-full h-[80vw] z-20 bg-gradient-to-b from-white from-55% to-transparent" />
+        <div className="absolute top-0 left-0 w-full h-[80vw] lg:hidden z-20 bg-gradient-to-b from-white from-55% to-transparent" />
         {/* Gradient Bottom */}
-        <div className="absolute bottom-0 left-0 w-full h-[110vw] z-20 bg-gradient-to-t from-white via-white to-transparent" />
+        <div className="absolute bottom-0 left-0 w-full h-[110vw] lg:h-[40vw] z-20 bg-gradient-to-t from-white via-white to-transparent" />
 
         {/* ORNAMENT */}
         {/* Layer Atas */}
@@ -61,7 +71,7 @@ const Dresscode = () => {
           alt=""
           width={147}
           height={108}
-          className="absolute top-[2%]  w-[18vw] left-[4vw] z-40"
+          className="absolute top-[2%]  w-[18vw] left-[4vw] z-40 lg:hidden"
         />
 
         {/* KERANG KANAN TENGAH */}
@@ -70,7 +80,7 @@ const Dresscode = () => {
           alt=""
           width={147}
           height={108}
-          className="absolute top-[31%]  w-[19vw] right-[5vw] z-40"
+          className="absolute top-[31%]  w-[19vw] right-[5vw] z-40 lg:hidden"
         />
 
         {/* Layer Bawah */}
@@ -92,11 +102,11 @@ const Dresscode = () => {
           className="absolute -bottom-[0vw] -right-[63vw] z-50"
         /> */}
 
-         {/* ASET ATAS */}
-       <img
+        {/* ASET ATAS */}
+        <img
           src="/images/Dresscode/Aset-Atass.webp"
           alt="Pohon Kanan Bawah"
-          className="absolute top-[0vw] z-[50]"
+          className="absolute top-[0vw] z-[50] lg:hidden pointer-events-none"
           style={{
             width: "112vw",
             height: "auto",
@@ -106,11 +116,11 @@ const Dresscode = () => {
           }}
         />
 
-      {/* ASET BAWAH */}
-       <img
+        {/* ASET BAWAH */}
+        <img
           src="/images/Dresscode/Aset-Bawah.webp"
           alt="Pohon Kanan Bawah"
-          className="absolute -bottom-[0vw] z-[50]"
+          className="absolute -bottom-[0vw] z-[50] lg:hidden pointer-events-none"
           style={{
             width: "188vw",
             height: "auto",
@@ -120,69 +130,87 @@ const Dresscode = () => {
           }}
         />
 
-        <div className="relative z-60 flex flex-col items-center text-center pt-[20.26vw] px-[8.5vw]">
+       
+        {/* ASET BAWAH DEKSTOP */}
+        <img
+          src="/images/Dresscode/dekstop/Aset-Bawah.webp"
+          alt="Pohon Kanan Bawah"
+          className="absolute -bottom-[0.1vw] z-[50] opacity-90"
+          style={{
+            width: "143vw",
+            height: "auto",
+            left: "58%",
+            transform: "translateX(-50%)",
+            maxWidth: "none",
+          }}
+        />
+
+        <div className="relative z-60 flex flex-col items-center text-center pt-[20.26vw] lg:pt-0 px-[8.5vw] lg:px-[6.55vw]">
           {/* KOTAK — absolute, z rendah → ketutup gradient ✅ */}
           <div
-            className="absolute inset-0 bg-white inset-x-[8.5vw]"
+            className="absolute inset-0 bg-white inset-x-[8.5vw] lg:inset-x-[6.55vw]"
             style={{ boxShadow: "0px 4px 14.5px 0px rgba(0,0,0,0.62)" }}
           />
 
-          <div className="relative z-[90] w-full px-[4.4vw] pt-[14.62vw] pb-[54.87vw] flex flex-col items-center">
+          <div className="relative z-[90] w-full px-[4.4vw] pt-[14.62vw] pb-[54.87vw] lg:pt-[15.212vw]  lg:pb-[17.196vw] lg:px-[1.32vw] flex flex-col items-center">
             {/* DRESSCODE */}
             <div className="flex flex-col items-center justify-center leading-none">
-              <h2 className="font-bigCaslon text-[24px] text-[#937E5B] uppercase">
+              <h2 className="font-bigCaslon text-[24px] lg:text-[2.116vw] text-[#937E5B] uppercase">
                 DRESS CODE
               </h2>
               <Image
-            src="/images/EventOrder/Row.svg"
-                alt="ornament"
-                width={156}
-                height={21}
-                className="pt-[5px]"
-              />
-              <p className="font-ovo text-[14px] text-[#937E5B] pt-[34px] tracking-wide leading-[18px]">
+                         src="/images/EventOrder/Row.webp"
+                         alt="ornament"
+                         width={556}
+                         height={21}
+                         className="pt-[10px] lg:pt-[1.720vw] w-[156px] lg:w-[12.302vw]"
+                       />
+              <p className="font-ovo text-[14px] lg:text-[1.323vw] text-[#937E5B] pt-[34px] lg:pt-[62px] tracking-wide leading-[18px] lg:leading-[1.3vw]">
                 Attire in colors from the suggested <br />
                 palette is greatly appreciated.
               </p>
               <Image
                 src="/images/Dresscode/Warna.svg"
                 alt="ornament"
-                width={180}
+                width={368}
                 height={40}
-                className="mt-[39px]"
+                className="mt-[39px] lg:mt-[50px] w-[180px] lg:w-[24.339vw]"
               />
             </div>
 
             {/* RSVP */}
-            <div id="rsvp" className="flex flex-col items-center justify-center mt-[115px]">
-              <h2 className="font-bigCaslon text-[24px] text-[#937E5B] uppercase">
+            <div
+              id="rsvp"
+              className="flex flex-col items-center justify-center mt-[115px] lg:mt-[11.310vw]"
+            >
+              <h2 className="font-bigCaslon text-[24px] lg:text-[2.116vw] text-[#937E5B] uppercase">
                 RSVP
               </h2>
               <Image
-            src="/images/EventOrder/Row.svg"
-                alt="ornament"
-                width={156}
-                height={21}
-                className="pt-[5px]"
-              />
-              <p className="font-ovo text-[14px] text-[#937E5B] pt-[38px]">
+                         src="/images/EventOrder/Row.webp"
+                         alt="ornament"
+                         width={556}
+                         height={21}
+                         className="pt-[3px] lg:pt-[1.720vw] w-[156px] lg:w-[12.302vw]"
+                       />
+              <p className="font-ovo text-[14px] lg:text-[1.323vw] text-[#937E5B] pt-[38px] lg:pt-[4.365vw]">
                 Dear,
               </p>
-              <p className="font-ovo text-[14px] text-[#937E5B] pt-[26px]">
+              <p className="font-ovo text-[14px] lg:text-[1.323vw] text-[#937E5B] pt-[26px] lg:pt-[3.175vw]">
                 Sela
               </p>
-              <p className="font-ovo text-[14px] text-[#937E5B] pt-[24px]">
+              <p className="font-ovo text-[14px] lg:text-[1.323vw] text-[#937E5B] pt-[24px] lg:pt-[3.175vw] lg:leading-[1.2vw] ">
                 Kindly confirm your attendance before <br />
                 27 June 2026
               </p>
 
               {/* BUTTON ATTEND */}
-              <div className="flex items-center justify-center gap-[16px] mt-[39px]">
+              <div className="flex items-center justify-center gap-[16px] mt-[39px] lg:mt-[3.109vw]">
                 <button
                   onClick={() =>
                     setPilihan(pilihan === "hadir" ? null : "hadir")
                   }
-                  className={`w-[103px] h-[33px] font-ovo text-[14px] uppercase rounded-[71px] transition-all duration-200 ${pilihan === "hadir" ? "bg-[#937E5B] text-white" : "bg-transparent border border-[#937E5B] text-[#937E5B]"}`}
+                  className={`w-[103px] h-[33px] lg:w-[11.375vw] lg:h-[2.646vw] font-ovo text-[14px] lg:text-[1.323vw] uppercase rounded-[71px] transition-all duration-200 ${pilihan === "hadir" ? "bg-[#937E5B] text-white" : "bg-transparent border border-[#937E5B] text-[#937E5B]"}`}
                 >
                   ATTEND
                 </button>
@@ -190,13 +218,13 @@ const Dresscode = () => {
                   onClick={() =>
                     setPilihan(pilihan === "tidak_hadir" ? null : "tidak_hadir")
                   }
-                  className={`w-[161px] h-[33px] font-ovo text-[14px] uppercase rounded-[71px] transition-all duration-200 ${pilihan === "tidak_hadir" ? "bg-[#937E5B] text-white" : "bg-transparent border border-[#937E5B] text-[#937E5B]"}`}
+                  className={`w-[161px] h-[33px] lg:w-[16.667vw] lg:h-[2.646vw] font-ovo text-[14px] lg:text-[1.323vw] uppercase rounded-[71px] transition-all duration-200 ${pilihan === "tidak_hadir" ? "bg-[#937E5B] text-white" : "bg-transparent border border-[#937E5B] text-[#937E5B]"}`}
                 >
                   UNABLE TO ATTEND
                 </button>
               </div>
 
-              <p className="font-ovo text-[14px] text-[#937E5B] mt-[37px]">
+              <p className="font-ovo text-[14px] lg:text-[1.323vw] text-[#937E5B] mt-[37px] lg:mt-[2.844vw]">
                 {pilihan === "tidak_hadir"
                   ? "ARE YOU SURE?"
                   : "Confirm your selection?"}
@@ -204,7 +232,7 @@ const Dresscode = () => {
 
               <button
                 onClick={handleConfirm}
-                className="w-[222px] h-[33px] bg-[#937E5B] font-ovo text-[14px] text-white uppercase rounded-[71px] mt-[28px]"
+                className="w-[222px] h-[33px] lg:h-[2.646vw] lg:w-[24.339vw] bg-[#937E5B] font-ovo text-[14px] lg:text-[1.323vw] text-white uppercase rounded-[71px] mt-[28px] lg:mt-[2.778vw]"
               >
                 {pilihan === "hadir"
                   ? "CONFIRM ATTEND"
@@ -213,7 +241,7 @@ const Dresscode = () => {
                     : "CONFIRM"}
               </button>
 
-              <p className="font-ovo text-[12px] text-[#937E5B] mt-[54px] leading-[15px]">
+              <p className="font-ovo text-[12px] lg:text-[1.323vw] text-[#937E5B] mt-[54px] lg:mt-[5.357vw] leading-[15px] lg:leading-[1.3vw] ">
                 If you need assistance with your RSVP, <br />
                 please contact our support team.
               </p>
@@ -222,14 +250,14 @@ const Dresscode = () => {
                 href="https://wa.me/6281234567890"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-[33px] w-[160px] bg-[#12877B] text-white flex items-center justify-center font-ovo text-[14px] rounded-full gap-[6px] mt-[24px]"
+                className="h-[33px] w-[160px] lg:h-[2.646vw] lg:w-[14.021vw] bg-[#12877B] text-white flex items-center justify-center font-ovo text-[14px] lg:text-[1.323vw] rounded-full gap-[6px] mt-[24px] lg:mt-[2.910vw]"
               >
                 <Image
                   src="/images/Dresscode/Logo-Wa.svg"
                   alt="Logo Wa"
                   width={18}
                   height={18}
-                  className="object-contain"
+                  className="object-contain w-[18px] lg:w-[25px]"
                 />
                 CHAT SUPPORT
               </a>

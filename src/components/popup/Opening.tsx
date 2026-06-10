@@ -69,7 +69,7 @@ const Opening = ({ setStart, namaTamu = "Sela" }: OpeningProps) => {
           exit="exit"
           className="fixed inset-0 z-[100] flex justify-center items-center px-4"
         >
-          <div className="absolute inset-0 z-[10] bg-black/30 lg:bg-black/60 backdrop-blur-sm lg:backdrop-blur-md" />
+          <div className="absolute inset-0 z-[10] bg-black/30 lg:bg-black/50 backdrop-blur-sm lg:backdrop-blur-md" />
 
           {/* CONTENT CARD */}
           <motion.div
@@ -99,15 +99,13 @@ const Opening = ({ setStart, namaTamu = "Sela" }: OpeningProps) => {
             </div>
 
             {/* KONTEN TEXT */}
-            <div className="relative flex flex-col items-center text-center px-4 pt-[29px] mb-[40px] lg:pt-[26px] lg:mb-[83px] flex-1 leading-none">
-
-
+            <div className="relative flex flex-col items-center text-center px-4 pt-[29px] mb-[40px] lg:pt-[34px] lg:mb-[40px] flex-1 leading-none">
               <Image
                 src="/images/Opening/Aset-Bawah.webp"
                 alt="Pohon Golden"
                 width={761}
                 height={163}
-                className="absolute -bottom-[50px] -left-[2vw] w-[250px] lg:-bottom-[86px]   lg:right-0 lg:w-[205px] z-[1]"
+                className="absolute -bottom-[50px] -left-[2vw] w-[250px] lg:-bottom-[52px]   lg:-left-[0.5vw] lg:w-[325px] z-[1]"
               />
 
               <Image
@@ -115,20 +113,19 @@ const Opening = ({ setStart, namaTamu = "Sela" }: OpeningProps) => {
                 alt="Pohon Golden"
                 width={761}
                 height={163}
-                className="absolute top-[0px] right-[0vw] w-[280px] lg:-bottom-[86px]   lg:right-0 lg:w-[205px] z-[1]"
+                className="absolute top-[0px] right-[0vw] w-[280px] lg:top-[0px]   lg:rit-0 lg:w-[400px] z-[1]"
               />
-
 
               <p className="relative z-[2] text-[10px] lg:text-[14px] text-[#937E5B] font-ovo tracking-wide">
                 THE WEDDING OF
               </p>
-              <h1 className="relative z-[2] text-[20px] lg:text-[56px] text-[#937E5B] pt-[10px] lg:pt-[8px] font-bigCaslon">
+              <h1 className="relative z-[2] text-[20px] lg:text-[32px] text-[#937E5B] pt-[10px] lg:pt-[11px] font-bigCaslon">
                 JUSUF & EVELYN
               </h1>
-              <p className="relative z-[2] text-[12px] lg:text-[12px] text-[#937E5B] font-ovo pt-[16px] md:pt-[19px]">
+              <p className="relative z-[2] text-[12px] lg:text-[14px] text-[#937E5B] font-ovo pt-[16px] md:pt-[30px]">
                 Dear Mr. /Mrs. / Ms.
               </p>
-              <p className="relative z-[2] text-[14px] lg:text-[14px] text-[#937E5B] font-ovo pt-[14px] md:pt-[17px] break-words max-w-full">
+              <p className="relative z-[2] text-[14px] lg:text-[18px] text-[#937E5B] font-ovo pt-[14px] md:pt-[17px] break-words max-w-full">
                 {namaTamu}
               </p>
               <p className="relative z-[2] text-[8px] lg:text-[12px] text-[#937E5B] font-ovo leading-[1.6] pt-[20px] md:pt-[23px] tracking-wide">

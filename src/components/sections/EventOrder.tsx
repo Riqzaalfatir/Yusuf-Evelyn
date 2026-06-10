@@ -3,18 +3,28 @@ import Image from "next/image";
 
 const EventOrder = () => {
   return (
-    <section id="time" className="relative w-full overflow-y-hidden overflow-x-hidden">
+    <section
+      id="time"
+      className="relative w-full overflow-y-hidden overflow-x-hidden"
+    >
       <Image
         alt="Bg Marmer"
         src="/images/About/Bg-Marmer.svg"
         fill
-        className="object-cover object-bottom"
+        className="object-cover object-bottom lg:hidden"
+      />
+
+      <Image
+        alt="Bg Marmer"
+        src="/images/About/dekstop/Bg-Marmer.svg"
+        fill
+        className="object-cover object-bottom hidden lg:block"
       />
 
       {/* Gradient Top */}
-      <div className="absolute top-0 left-0 w-full h-[80vw] z-20 bg-gradient-to-b from-white from-55% to-transparent" />
+      <div className="absolute top-0 left-0 w-full h-[80vw] lg:h-[45vw] z-20 bg-gradient-to-b from-white from-55% to-transparent" />
       {/* Gradient Bottom */}
-      <div className="absolute bottom-0 left-0 w-full h-[110vw] z-20 bg-gradient-to-t from-white via-white to-transparent" />
+      <div className="absolute bottom-0 left-0 w-full h-[110vw] lg:h-[45vw] z-20 bg-gradient-to-t from-white via-white to-transparent" />
 
       {/* ORNAMENT */}
 
@@ -35,7 +45,7 @@ const EventOrder = () => {
         alt=""
         width={129}
         height={104}
-        className="absolute top-[8vw] w-[30.08vw] right-[3vw] z-[51]"
+        className="absolute top-[8vw] w-[30.08vw] lg:w-[10vw] right-[3vw] z-[51]"
       />
 
       {/* KERANG KIRI */}
@@ -44,7 +54,7 @@ const EventOrder = () => {
         alt=""
         width={147}
         height={108}
-        className="absolute top-[42%]  w-[25.38vw] left-0 z-20"
+        className="absolute top-[42%]  w-[25.38vw] left-0 z-20 lg:hidden"
       />
 
       {/* Layer Bawah */}
@@ -75,71 +85,107 @@ const EventOrder = () => {
         className="absolute -bottom-[3vw] -right-[69vw] z-50"
       /> */}
 
-       {/* ASET ATAS */}
-       <img
-          src="/images/EventOrder/Aset-Atas.webp"
-          alt="Pohon Kanan Bawah"
-          className="absolute -top-[5vw] z-[50]"
-          style={{
-            width: "105vw",
-            height: "auto",
-            left: "48%",
-            transform: "translateX(-50%)",
-            maxWidth: "none",
-          }}
-        />
+       <Image
+              src="/images/About/dekstop/Ranting.webp"
+              alt=""
+              width={147}
+              height={108}
+              className="absolute top-[40%] w-[15vw] right-0 z-20 hidden lg:block"
+            />
+
+      {/* ASET ATAS */}
+      <img
+        src="/images/EventOrder/Aset-Atas.webp"
+        alt="Pohon Kanan Bawah"
+        className="absolute -top-[5vw] z-[50] lg:hidden pointer-events-none"
+        style={{
+          width: "105vw",
+          height: "auto",
+          left: "48%",
+          transform: "translateX(-50%)",
+          maxWidth: "none",
+        }}
+      />
 
       {/* ASET BAWAH */}
-       <img
-          src="/images/EventOrder/Aset-Bawah.webp"
-          alt="Pohon Kanan Bawah"
-          className="absolute -bottom-[8vw] z-[50]"
-          style={{
-            width: "185vw",
-            height: "auto",
-            left: "78%",
-            transform: "translateX(-50%)",
-            maxWidth: "none",
-          }}
-        />
+      <img
+        src="/images/EventOrder/Aset-Bawah.webp"
+        alt="Pohon Kanan Bawah"
+        className="absolute -bottom-[8vw] z-[50] lg:hidden pointer-events-none"
+        style={{
+          width: "185vw",
+          height: "auto",
+          left: "78%",
+          transform: "translateX(-50%)",
+          maxWidth: "none",
+        }}
+      />
+
+      {/* ASET ATAS DEKSTOP */}
+      <img
+        src="/images/EventOrder/dekstop/Aset-Atas.webp"
+        alt="Pohon Kanan Bawah"
+        className="absolute -top-[1vw] z-[50] hidden lg:block"
+        style={{
+          width: "102vw",
+          height: "auto",
+          left: "49.5%",
+          transform: "translateX(-50%)",
+          maxWidth: "none",
+        }}
+      />
+
+      {/* ASET BAWAH DEKSTOP */}
+      <img
+        src="/images/EventOrder/dekstop/Aset-Bawah.webp"
+        alt="Pohon Kanan Bawah"
+        className="absolute -bottom-[2vw] z-[50] hidden lg:block opacity-90"
+        style={{
+          width: "145vw",
+          height: "auto",
+          left: "63%",
+          transform: "translateX(-50%)",
+          maxWidth: "none",
+        }}
+      />
 
       {/* Konten */}
-      <div className="relative z-60 flex flex-col items-center text-center pt-[16.92vw] px-[8.5vw]">
+      <div className="relative z-60 flex flex-col items-center text-center pt-[16.92vw] lg:pt-0 px-[8.5vw] lg:px-[6.55vw]">
         {/* KOTAK — absolute, z rendah → ketutup gradient ✅ */}
         <div
-          className="absolute inset-0 bg-white inset-x-[8.5vw]"
+          className="absolute inset-0 bg-white inset-x-[8.5vw] lg:inset-x-[6.55vw]"
           style={{ boxShadow: "0px 4px 14.5px 0px rgba(0,0,0,0.62)" }}
         />
 
-        <div className="relative z-[90]  w-full px-[4.4vw] pt-[29.74vw] pb-[57.44vw] flex flex-col items-center leading-none">
-          <h2 className="font-bigCaslon text-[24px] text-[#937E5B] uppercase">
+        <div className="relative z-[90]  w-full px-[4.4vw] pt-[29.74vw] pb-[57.44vw] lg:pt-[23.016vw] lg:pb-[25.132vw] lg:px-[1.32vw] flex flex-col items-center leading-none">
+          <h2 className="font-bigCaslon text-[24px] lg:text-[2.116vw] text-[#937E5B] uppercase">
             EVENT ORDER
           </h2>
 
           <Image
-            src="/images/EventOrder/Row.svg"
+            src="/images/EventOrder/Row.webp"
             alt="ornament"
-            width={156}
+            width={556}
             height={21}
-            className="pt-[10px]"
+            className="pt-[10px] lg:pt-[1.720vw] w-[156px] lg:w-[12.302vw]"
           />
 
           {/* FRIDAY 7 AGUSTUS */}
           <div className="flex flex-col items-center justify-center leading-none">
-            <h3 className="font-bigCaslon text-[16px] text-[#937E5B] pt-[39px]">
+            <h3 className="font-bigCaslon text-[16px] lg:text-[1.587vw] text-[#937E5B] pt-[39px] lg:pt-[4.365vw]">
               FRIDAY, 7 AUGUST 2026
             </h3>
-            <p className="uppercase font-ovo text-[14px] text-[#937E5B] pt-[29px]">
+            <p className="uppercase font-ovo text-[14px] lg:text-[1.323vw] text-[#937E5B] pt-[29px] lg:pt-[3.770vw]">
               WELCOME DINNER
             </p>
-            <p className="uppercase font-ovo text-[14px] text-[#937E5B] pt-[22px]">
+            <p className="uppercase font-ovo text-[14px] lg:text-[1.323vw] text-[#937E5B] pt-[22px] lg:pt-[2.050vw]">
               18.00 WITA
             </p>
-            <p className="font-ovo text-[14px] text-[#937E5B] leading-[20px] pt-[18px]">
+            <p className="font-ovo text-[14px] lg:text-[1.190vw] text-[#937E5B] leading-[20px] lg:leading-[1.852vw] pt-[18px] lg:pt-[1.521vw]">
               at Kecak Ballroom <br />
-              Sofitel Bali Nusa Dua Beach resort
+              Sofitel Bali Nusa Dua Beach Resort
             </p>
-            <p className="font-ovo text-[14px] text-[#937E5B] leading-[20px] pt-[15px]">
+            <p className="font-ovo text-[14px] lg:text-[1.190vw] text-[#937E5B] leading-[20px] lg:leading-[1.852vw] pt-[15px] lg:pt-[1.323vw]">
               ITDC Tourism Complex <br />
               Jl. Nusa Dua Lot N5, Benoa, South Kuta, Bali
             </p>
@@ -148,51 +194,59 @@ const EventOrder = () => {
               href="https://www.google.com/maps/dir//Sofitel+Bali+Nusa+Dua+Beach+Resort,+Itdc+Tourism+Complex,+Jl.+Nusa+Dua+Lot+N5,+Benoa,+South+Kuta,+Badung+Regency,+Bali+80363/@-8.794992,115.2156879,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x2dd24322042a2c9f:0x9c15915f406531c3!2m2!1d115.2299236!2d-8.7916892?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline font-ovo text-[14px] text-[#937E5B] mt-[18px]"
+              className="underline font-ovo text-[14px] lg:text-[1.323vw] text-[#937E5B] mt-[18px] lg:mt-[1.984vw]"
             >
               Google Maps
             </a>
           </div>
 
-          <div className="w-3 h-3 lg:w-[13px] lg:h-[12px] rounded-full bg-[#937E5B] mt-[36px] mb-[30px] mx-auto" />
+          <div className="w-3 h-3 lg:w-[1.058vw] lg:h-[1.058vw] rounded-full bg-[#937E5B] mt-[36px] mb-[30px] lg:mt-[4.762vw] lg:mb-[5.026vw]  mx-auto" />
 
           {/* SATURDAY 8 AGUSTUS */}
           <div className="flex flex-col items-center justify-center leading-none">
-            <h3 className="font-bigCaslon text-[16px] text-[#937E5B]">
+            <h3 className="font-bigCaslon text-[16px] lg:text-[1.587vw] text-[#937E5B]">
               SATURDAY, 8 AUGUST 2026
             </h3>
 
             {/* HOLY */}
             <div className=" flex flex-col items-center justify-center leading-none">
-              <p className="uppercase font-ovo text-[14px] text-[#937E5B] pt-[29px]">
+              <p className="uppercase font-ovo text-[14px] lg:text-[1.323vw]  text-[#937E5B] pt-[29px] lg:pt-[3.241vw]">
                 HOLY MATRIMONY
               </p>
-              <p className="uppercase font-ovo text-[14px] text-[#937E5B] pt-[25px]">
+              <p className="uppercase font-ovo text-[14px] lg:text-[1.323vw]  text-[#937E5B] pt-[25px] lg:pt-[2.050vw]">
                 15.00 WITA
               </p>
-              <p className="font-ovo text-[14px] text-[#937E5B] leading-[20px] pt-[18px]">
+              <p className="font-ovo text-[14px] lg:text-[1.190vw] text-[#937E5B] leading-[20px] lg:leading-[1.852vw] pt-[18px] lg:pt-[1.521vw]">
                 at Jewel Chapel <br />
                 Sofitel Bali Nusa Dua Beach Resort
               </p>
-              <p className="font-ovo text-[14px] text-[#937E5B] leading-[20px] pt-[15px]">
+              <p className="font-ovo text-[14px] lg:text-[1.190vw] text-[#937E5B] leading-[20px] lg:leading-[1.852vw] pt-[15px] lg:pt-[1.323vw]">
                 ITDC Tourism Complex <br />
                 Jl. Nusa Dua Lot N5, Benoa, South Kuta, Bali
               </p>
+              <a
+              href="https://www.google.com/maps/dir//Sofitel+Bali+Nusa+Dua+Beach+Resort,+Itdc+Tourism+Complex,+Jl.+Nusa+Dua+Lot+N5,+Benoa,+South+Kuta,+Badung+Regency,+Bali+80363/@-8.794992,115.2156879,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x2dd24322042a2c9f:0x9c15915f406531c3!2m2!1d115.2299236!2d-8.7916892?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline font-ovo text-[14px] lg:text-[1.323vw]  text-[#937E5B] mt-[18px] lg:mt-[1.984vw]"
+            >
+              Google Maps
+            </a>
             </div>
 
             {/* TEA PAI */}
             <div className=" flex flex-col items-center justify-center leading-none">
-              <p className="uppercase font-ovo text-[14px] text-[#937E5B] pt-[40px]">
+              <p className="uppercase font-ovo text-[14px] lg:text-[1.323vw]  text-[#937E5B] pt-[40px] lg:pt-[5.159vw]">
                 TEA PAI
               </p>
-              <p className="uppercase font-ovo text-[14px] text-[#937E5B] pt-[26px]">
+              <p className="uppercase font-ovo text-[14px] lg:text-[1.323vw]  text-[#937E5B] pt-[26px] lg:pt-[2.050vw]">
                 16.30 WITA
               </p>
-              <p className="font-ovo text-[14px] text-[#937E5B] leading-[20px] pt-[18px]">
+              <p className="font-ovo text-[14px] lg:text-[1.190vw] text-[#937E5B] leading-[20px] lg:leading-[1.852vw] pt-[18px] lg:pt-[1.521vw]">
                 at Legong Room <br />
                 Sofitel Bali Nusa Dua Beach Resort
               </p>
-              <p className="font-ovo text-[14px] text-[#937E5B] leading-[20px] pt-[15px]">
+              <p className="font-ovo text-[14px] lg:text-[1.190vw] text-[#937E5B] leading-[20px] lg:leading-[1.852vw] pt-[15px] lg:pt-[1.323vw]">
                 ITDC Tourism Complex <br />
                 Jl. Nusa Dua Lot N5, Benoa, South Kuta, Bali
               </p>
@@ -202,26 +256,26 @@ const EventOrder = () => {
               href="https://www.google.com/maps/dir//Sofitel+Bali+Nusa+Dua+Beach+Resort,+Itdc+Tourism+Complex,+Jl.+Nusa+Dua+Lot+N5,+Benoa,+South+Kuta,+Badung+Regency,+Bali+80363/@-8.794992,115.2156879,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x2dd24322042a2c9f:0x9c15915f406531c3!2m2!1d115.2299236!2d-8.7916892?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline font-ovo text-[14px] text-[#937E5B] mt-[18px]"
+              className="underline font-ovo text-[14px] lg:text-[1.323vw]  text-[#937E5B] mt-[18px] lg:mt-[1.984vw]"
             >
               Google Maps
             </a>
           </div>
 
-          <div className="w-3 h-3 lg:w-[13px] lg:h-[12px] rounded-full bg-[#937E5B] mt-[38px] mb-[23px] mx-auto" />
+          <div className="w-3 h-3 lg:w-[1.058vw] lg:h-[1.058vw] rounded-full bg-[#937E5B] mt-[38px] mb-[23px] lg:mt-[4.762vw] lg:mb-[5.026vw] mx-auto" />
 
           {/* SUNDAY  9 AGUSTUS */}
           <div className="flex flex-col items-center justify-center leading-none">
-            <h3 className="font-bigCaslon text-[16px] text-[#937E5B]">
+            <h3 className="font-bigCaslon text-[16px] lg:text-[1.587vw] text-[#937E5B]">
               SUNDAY, 9 AUGUST 2026
             </h3>
-            <p className="uppercase font-ovo text-[14px] text-[#937E5B] pt-[34px]">
+            <p className="uppercase font-ovo text-[14px] lg:text-[1.323vw]  text-[#937E5B] pt-[34px] lg:pt-[3.241vw]">
               THANKSGIVING SERVICE
             </p>
-            <p className="uppercase font-ovo text-[14px] text-[#937E5B] pt-[27px]">
+            <p className="uppercase font-ovo text-[14px] lg:text-[1.323vw]  text-[#937E5B] pt-[27px] lg:pt-[2.050vw]">
               15.00 WITA
             </p>
-            <p className="font-ovo text-[14px] text-[#937E5B] leading-[20px] pt-[18px]">
+            <p className="font-ovo text-[14px] lg:text-[1.190vw] text-[#937E5B] leading-[20px] lg:leading-[1.852vw] pt-[18px] lg:pt-[1.521vw]">
               at Apurva Chapel <br />
               The Apurva Kempinski Bali
               <span className="block pt-[10px]">
@@ -230,10 +284,10 @@ const EventOrder = () => {
             </p>
 
             <a
-             href="https://www.google.com/maps/place/The+Apurva+Kempinski+Bali/@-8.8287865,115.2130394,17z/data=!4m9!3m8!1s0x2dd25cc0e01a2dfb:0x486d1b655b87ed9c!5m2!4m1!1i2!8m2!3d-8.8287865!4d115.2156143!16s%2Fg%2F11clvmncw2?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D"
+              href="https://www.google.com/maps/place/The+Apurva+Kempinski+Bali/@-8.8287865,115.2130394,17z/data=!4m9!3m8!1s0x2dd25cc0e01a2dfb:0x486d1b655b87ed9c!5m2!4m1!1i2!8m2!3d-8.8287865!4d115.2156143!16s%2Fg%2F11clvmncw2?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline font-ovo text-[14px] text-[#937E5B] mt-[18px]"
+              className="underline font-ovo text-[14px] lg:text-[1.323vw]  text-[#937E5B] mt-[18px] lg:mt-[1.984vw]"
             >
               Google Maps
             </a>

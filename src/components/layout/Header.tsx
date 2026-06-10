@@ -89,7 +89,7 @@ const Header = () => {
               transition={{ duration: 1, ease: "easeOut" }}
               className="absolute top-[-8px] left-[7px] lg:top-[-10px] lg:left-[11px]"
             >
-              <p className="text-[30px] lg:text-[54px] text-white font-ibm font-light">x</p>
+              <p className="text-[30px] lg:text-[50px] text-white font-ibm font-light">x</p>
             </motion.button>
 
             {/* MENU */}
