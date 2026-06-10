@@ -33,8 +33,7 @@ export default function Home() {
   return (
     <>
       <main className="block">
-        <Header />
-        <Hero />
+        <Hero start={start} />
         <About />
         <Countdown />
         <EventOrder />
