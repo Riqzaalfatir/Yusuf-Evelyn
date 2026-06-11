@@ -92,7 +92,7 @@ const About = () => {
       {/* ASET BAWAH */}
       {isMobile === null ? null : isMobile ? (
         <img
-          src="/images/About/AsetBawah.webp"
+          src="/images/About/AsetBawahh.webp"
           alt=""
           className="absolute -bottom-[2vw] z-[50] pointer-events-none"
           style={{
