@@ -9,7 +9,7 @@ const EventOrder = () => {
 
   return (
     <section
-      id="time"
+      id="eventorder"
       className="relative w-full overflow-y-hidden overflow-x-hidden"
     >
       {/* BG MARMER */}

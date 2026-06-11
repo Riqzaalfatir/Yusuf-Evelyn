@@ -16,11 +16,11 @@ const Header = () => {
     { name: "HOME", link: "#hero" },
     { name: "PROFILE", link: "#tentang" },
     { name: "COUNTING DOWN", link: "#countdown" },
-    { name: "TIME & LOCATION", link: "#time" },
+    { name: "EVENT ORDER", link: "#eventorder" },
     { name: "GALLERY", link: "#gallery" },
     { name: "DRESS CODE", link: "#dresscode" },
     { name: "RSVP", link: "#rsvp" },
-    { name: "SHARE YOUR WISHES", link: "#wishes" },
+    { name: "WISHES", link: "#wishes" },
   ];
 
   const container: Variants = {
