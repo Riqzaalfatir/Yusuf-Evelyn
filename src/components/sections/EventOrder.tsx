@@ -370,7 +370,7 @@ const EventOrder = () => {
             </p>
 
             <a
-              href="https://www.google.com/maps/place/The+Apurva+Kempinski+Bali/@-8.8287865,115.2130394,17z/data=!4m9!3m8!1s0x2dd25cc0e01a2dfb:0x486d1b655b87ed9c!5m2!4m1!1i2!8m2!3d-8.8287865!4d115.2156143!16s%2Fg%2F11clvmncw2?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D"
+              href="google.com/maps/place/Jl.+Raya+Nusa+Dua+Selatan+No.4,+Benoa,+Kec.+Kuta+Sel.,+Kabupaten+Badung,+Bali+80361/data=!4m2!3m1!1s0x2dd25cc10e95aa23:0x7067fe56d86c5b9b?sa=X&ved=1t:242&ictx=111"
               target="_blank"
               rel="noopener noreferrer"
               className="underline font-ovo text-[14px] lg:text-[1.323vw]  text-[#937E5B] mt-[20px] lg:mt-[3.5vw]"

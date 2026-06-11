@@ -21,6 +21,9 @@ const IMAGES_COMMON = [
   // EVENT ORDER
   "/images/EventOrder/fish.gif",
 
+  // POPUP WISHES
+  "/images/Wishes/Pesan.svg",
+
   // POPUP PESAN
   "/images/Popup/TandaCeklisBg.svg",
   "/images/Popup/TandaSeru.svg",
