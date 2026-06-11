@@ -58,7 +58,7 @@ const Dresscode = () => {
         {/* Gradient Top */}
         <div className="absolute top-0 left-0 w-full h-[80vw] lg:h-[40vw] z-20 bg-gradient-to-b from-white from-55% to-transparent" />
         {/* Gradient Bottom */}
-        <div className="absolute bottom-0 left-0 w-full h-[110vw] lg:h-[40vw] z-20 bg-gradient-to-t from-white via-white to-transparent" />
+        <div className="absolute bottom-0 left-0 w-full h-[110vw] lg:h-[50vw] z-20 bg-gradient-to-t from-white via-white to-transparent" />
 
         {/* KERANG KIRI ATAS */}
         <Image
@@ -107,23 +107,34 @@ const Dresscode = () => {
           />
         )}
 
+         <img
+  src="/images/About/seawed.gif"
+  alt=""
+  className="absolute -bottom-[17vw] -right-[30vw] w-[75vw] lg:-bottom-[7vw] lg:-right-[12vw] z-[40] lg:z-[60]  lg:w-[32vw] pointer-events-none scale-x-[-1]"
+/>
+         <img
+  src="/images/Dresscode/dekstop/Kerang.webp"
+  alt=""
+  className="absolute bottom-[0vw] -right-[8vw] z-[65]  w-[25vw] hidden lg:block pointer-events-none "
+/>
+
         {/* ASET BAWAH */}
         {isMobile === null ? null : isMobile ? (
           <img
-            src="/images/Dresscode/Aset-Bawah.webp"
+            src="/images/Dresscode/AsetBawah.webp"
             alt="Pohon Kanan Bawah"
-            className="absolute -bottom-[0vw] z-[50] pointer-events-none"
+            className="absolute -bottom-[2.4vw] z-[50] pointer-events-none"
             style={{
-              width: "188vw",
+              width: "153vw",
               height: "auto",
-              left: "72%",
+              left: "53%",
               transform: "translateX(-50%)",
               maxWidth: "none",
             }}
           />
         ) : (
           <img
-            src="/images/Dresscode/dekstop/Aset-Bawah.webp"
+            src="/images/Dresscode/dekstop/AsetBawah.webp"
             alt="Pohon Kanan Bawah"
             className="absolute -bottom-[0.1vw] z-[50] opacity-90"
             style={{
@@ -143,7 +154,7 @@ const Dresscode = () => {
             style={{ boxShadow: "0px 4px 14.5px 0px rgba(0,0,0,0.62)" }}
           />
 
-          <div className="relative z-[90] w-full px-[4.4vw] pt-[14.62vw] pb-[50vw] lg:pt-[15.212vw]  lg:pb-[17.196vw] lg:px-[1.32vw] flex flex-col items-center">
+          <div className="relative z-[90] w-full px-[4.4vw] pt-[14.62vw] pb-[50vw] lg:pt-[15.212vw]  lg:pb-[18.196vw] lg:px-[1.32vw] flex flex-col items-center">
             {/* DRESSCODE */}
             <div className="flex flex-col items-center justify-center leading-none">
               <motion.h2
@@ -200,7 +211,6 @@ const Dresscode = () => {
                 />
               </motion.div>
             </div>
-
 
 
 

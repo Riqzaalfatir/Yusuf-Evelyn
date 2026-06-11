@@ -9,10 +9,17 @@ const IMAGES_COMMON = [
 
   // HERO
   "/images/Hero/Logo-JE.webp",
+  
 
   // ABOUT
   "/images/About/Pengantin-LakiLaki.webp",
   "/images/About/Pengantin-Perempuan.webp",
+
+   // RUMPUT GIFT
+  "/images/About/seawed.gif",
+
+  // EVENT ORDER
+  "/images/EventOrder/fish.gif",
 
   // POPUP PESAN
   "/images/Popup/TandaCeklisBg.svg",

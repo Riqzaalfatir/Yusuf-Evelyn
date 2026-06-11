@@ -82,10 +82,17 @@ const About = () => {
         />
       )}
 
+      {/* GIF SEWED - bottom left */}
+<img
+  src="/images/About/seawed.gif"
+  alt=""
+  className="absolute -bottom-[2.5vw] -left-[20vw] lg:-bottom-[3.5vw] lg:-left-[10vw] z-[60] w-[50vw] lg:w-[31vw] pointer-events-none"
+/>
+
       {/* ASET BAWAH */}
       {isMobile === null ? null : isMobile ? (
         <img
-          src="/images/About/Aset-Bawah.webp"
+          src="/images/About/AsetBawah.webp"
           alt=""
           className="absolute -bottom-[2vw] z-[50] pointer-events-none"
           style={{
@@ -98,13 +105,13 @@ const About = () => {
         />
       ) : (
         <img
-          src="/images/About/dekstop/Aset-Bawahh.webp"
+          src="/images/About/dekstop/AsetBawah.webp"
           alt=""
-          className="absolute -bottom-[0vw] z-[50] opacity-90"
+          className="absolute -bottom-[1vw] z-[50] opacity-90"
           style={{
-            width: "120vw",
+            width: "102vw",
             height: "auto",
-            left: "41%",
+            left: "51%",
             transform: "translateX(-50%)",
             maxWidth: "none",
           }}

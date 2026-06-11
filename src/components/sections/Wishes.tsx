@@ -93,23 +93,29 @@ const Wishes = () => {
         />
       )}
 
+      <img
+  src="/images/About/seawed.gif"
+  alt=""
+  className="absolute -bottom-[19vw] -left-[28vw] w-[73vw] lg:-bottom-[16vw] lg:-left-[14vw] z-[60]  lg:w-[41vw] pointer-events-none scale-x-[-1]"
+/>
+
       {/* ASET BAWAH */}
       {isMobile === null ? null : isMobile ? (
         <img
-          src="/images/Wishes/Aset-Bawah.webp"
+          src="/images/Wishes/AsetBawah.webp"
           alt="Pohon Kanan Bawah"
-          className="absolute -bottom-[10vw] z-[50] pointer-events-none"
+          className="absolute -bottom-[11vw] z-[50] pointer-events-none"
           style={{
-            width: "143vw",
+            width: "140vw",
             height: "auto",
-            left: "46%",
+            left: "48.5%",
             transform: "translateX(-50%)",
             maxWidth: "none",
           }}
         />
       ) : (
         <img
-          src="/images/Wishes/dekstop/Aset-Bawah.webp"
+          src="/images/Wishes/dekstop/AsetBawah.webp"
           alt="Pohon Kanan Bawah"
           className="absolute -bottom-[5.7vw] z-[50]   opacity-90"
           style={{
@@ -130,7 +136,7 @@ const Wishes = () => {
           style={{ boxShadow: "0px 4px 14.5px 0px rgba(0,0,0,0.62)" }}
         />
 
-        <div className="relative z-[90] w-full px-[4.4vw] pt-[30vw] pb-[50.26vw] lg:pt-[9.986vw]  lg:pb-[22.487vw] lg:px-[1.32vw] flex flex-col items-center">
+        <div className="relative z-[90] w-full px-[4.4vw] pt-[30vw] pb-[50.26vw] lg:pt-[9.986vw]  lg:pb-[23.5vw] lg:px-[1.32vw] flex flex-col items-center">
           <motion.h2
             variants={fadeUp}
             initial="hidden"

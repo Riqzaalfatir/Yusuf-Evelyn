@@ -92,29 +92,41 @@ const EventOrder = () => {
         />
       )}
 
+      <img
+  src="/images/About/seawed.gif"
+  alt=""
+  className="absolute -bottom-[25vw] -right-[30vw] w-[85vw] lg:-bottom-[10vw] lg:-right-[12vw] z-[60]  lg:w-[41vw] pointer-events-none scale-x-[-1]"
+/>
+
+      <img
+  src="/images/EventOrder/fish.gif"
+  alt=""
+  className="absolute -bottom-[7vw] -right-[0vw] w-[80vw] lg:-bottom-[2vw] lg:right-[4vw] z-[60]  lg:w-[31vw] pointer-events-none scale-x-[-1]"
+/>
+
       {/* ASET BAWAH */}
       {isMobile === null ? null : isMobile ? (
         <img
-          src="/images/EventOrder/Aset-Bawah.webp"
+          src="/images/EventOrder/AsetBawah.webp"
           alt=""
           className="absolute -bottom-[8vw] z-[50] pointer-events-none"
           style={{
-            width: "185vw",
+            width: "130vw",
             height: "auto",
-            left: "78%",
+            left: "54%",
             transform: "translateX(-50%)",
             maxWidth: "none",
           }}
         />
       ) : (
         <img
-          src="/images/EventOrder/dekstop/Aset-Bawah.webp"
+          src="/images/EventOrder/dekstop/AsetBawah.webp"
           alt=""
-          className="absolute -bottom-[2vw] z-[50] opacity-90"
+          className="absolute -bottom-[0.7vw] z-[50] opacity-90"
           style={{
-            width: "150vw",
+            width: "110vw",
             height: "auto",
-            left: "60%",
+            left: "45%",
             transform: "translateX(-50%)",
             maxWidth: "none",
           }}
