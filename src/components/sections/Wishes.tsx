@@ -113,9 +113,9 @@ const Wishes = () => {
           alt="Pohon Kanan Bawah"
           className="absolute -bottom-[10.5vw] z-[50] pointer-events-none"
           style={{
-            width: "140vw",
+            width: "138vw",
             height: "auto",
-            left: "48.5%",
+            left: "50.3%",
             transform: "translateX(-50%)",
             maxWidth: "none",
           }}
