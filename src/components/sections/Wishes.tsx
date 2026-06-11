@@ -62,7 +62,7 @@ const Wishes = () => {
       {/* Gradient Top */}
       <div className="absolute top-0 left-0 w-full h-[60vw] lg:h-[35vw] z-20 bg-gradient-to-b from-white from-55% to-transparent" />
       {/* Gradient Bottom */}
-      <div className="absolute bottom-0 left-0 w-full h-[110vw] lg:hidden z-20 bg-gradient-to-t from-white via-white to-transparent" />
+      <div className="absolute bottom-0 left-0 w-full h-[110vw] lg:h-[30vw] z-20 bg-gradient-to-t from-white via-white to-transparent" />
 
       {/* KERANG KIRI ATAS */}
       <Image
@@ -72,6 +72,8 @@ const Wishes = () => {
         height={108}
         className="absolute top-[1.5%]  w-[20vw] left-[2.5vw]  z-[55] lg:top-[1%]  lg:w-[11vw] lg:left-[5vw]"
       />
+
+    
 
       {/* ASET ATAS */}
       {isMobile === null ? null : isMobile ? (
@@ -102,19 +104,14 @@ const Wishes = () => {
         />
       )}
 
-      {/* SEWED */}
-      <img
-        src="/images/About/seawed.gif"
-        alt=""
-        className="absolute -bottom-[19vw] -left-[28vw] w-[73vw] lg:-bottom-[16vw] lg:-left-[14vw] z-[60]  lg:w-[41vw] pointer-events-none scale-x-[-1]"
-      />
+  
 
       {/* ASET BAWAH */}
       {isMobile === null ? null : isMobile ? (
         <img
           src="/images/Wishes/AsetBawah.webp"
           alt="Pohon Kanan Bawah"
-          className="absolute -bottom-[11vw] z-[50] pointer-events-none"
+          className="absolute -bottom-[10.5vw] z-[50] pointer-events-none"
           style={{
             width: "140vw",
             height: "auto",
@@ -129,9 +126,9 @@ const Wishes = () => {
           alt="Pohon Kanan Bawah"
           className="absolute -bottom-[5.7vw] z-[50]   opacity-90"
           style={{
-            width: "120vw",
+            width: "117vw",
             height: "auto",
-            left: "49%",
+            left: "50.5%",
             transform: "translateX(-50%)",
             maxWidth: "none",
           }}

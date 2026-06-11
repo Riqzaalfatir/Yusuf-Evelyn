@@ -15,8 +15,11 @@ const IMAGES_COMMON = [
   "/images/About/Pengantin-LakiLaki.webp",
   "/images/About/Pengantin-Perempuan.webp",
 
-   // RUMPUT GIFT
-  "/images/About/seawed.gif",
+   // RUMPUT GIF
+  "/images/About/Sewed.gif",
+
+  // MUTIARA GIF
+  "/images/Dresscode/Mutiara.gif",
 
   // EVENT ORDER
   "/images/EventOrder/fish.gif",

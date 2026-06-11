@@ -92,16 +92,19 @@ const EventOrder = () => {
         />
       )}
 
-      <img
-        src="/images/About/seawed.gif"
+    
+
+      {/* SEWED */}
+       <img
+        src="/images/About/Sewed.gif"
         alt=""
-        className="absolute -bottom-[25vw] -right-[30vw] w-[85vw] lg:-bottom-[10vw] lg:-right-[12vw] z-[60]  lg:w-[41vw] pointer-events-none scale-x-[-1]"
+        className="absolute -bottom-[25vw] -right-[35vw] w-[86vw] lg:-bottom-[10vw] lg:-right-[15vw] z-[60]  lg:w-[41vw] pointer-events-none scale-x-[-1]"
       />
 
       <img
         src="/images/EventOrder/fish.gif"
         alt=""
-        className="absolute -bottom-[7vw] -right-[0vw] w-[80vw] lg:-bottom-[2vw] lg:right-[4vw] z-[60]  lg:w-[31vw] pointer-events-none scale-x-[-1]"
+        className="absolute bottom-[12vw] -right-[2vw] w-[60vw] lg:bottom-[6vw] lg:right-[0vw] z-[60]  lg:w-[27vw] pointer-events-none scale-x-[-1]"
       />
 
       {/* ASET BAWAH */}

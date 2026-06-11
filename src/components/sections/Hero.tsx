@@ -35,10 +35,10 @@ const Hero = ({ start }: { start: boolean }) => {
           initial="hidden"
           animate={start ? "show" : "hidden"}
           transition={{ duration: 2.5, ease: "easeOut", delay: 0 }}
-            className="absolute top-[9%] left-1/2 -translate-x-1/2 w-[158px] lg:top-[8%] lg:w-[211px] h-auto z-30"
+            className="absolute top-[14.2%] left-1/2 -translate-x-1/2 w-[51px] lg:top-[16%] lg:w-[79px] h-auto z-30"
         >
           <Image
-            src="/images/Hero/Logo-JE.webp"
+            src="/images/Hero/Logo-E.webp"
             alt="Provite Logo"
             width={250}
             height={250}
@@ -66,7 +66,7 @@ const Hero = ({ start }: { start: boolean }) => {
           />
         )}
 
-        <div className="absolute inset-0 flex flex-col items-center justify-start pt-[56.5%] lg:pt-[16%] text-center z-10">
+        <div className="absolute inset-0 flex flex-col items-center justify-start pt-[59.3%] lg:pt-[17%] text-center z-10">
           <motion.p
             variants={fadeIn}
             initial="hidden"

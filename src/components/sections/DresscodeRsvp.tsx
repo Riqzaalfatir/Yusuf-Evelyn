@@ -109,36 +109,36 @@ const Dresscode = () => {
 
         {/* SEWED */}
         <img
-          src="/images/About/seawed.gif"
+           src="/images/About/Sewed.gif"
           alt=""
-          className="absolute -bottom-[17vw] -right-[30vw] w-[75vw] lg:-bottom-[7vw] lg:-right-[12vw] z-[40] lg:z-[60]  lg:w-[32vw] pointer-events-none scale-x-[-1]"
+          className="absolute -bottom-[17vw] -right-[33.5vw] w-[75vw] lg:-bottom-[7vw] lg:-right-[12vw] z-[60] lg:z-[60]  lg:w-[32vw] pointer-events-none scale-x-[-1]"
         />
 
-        {/* KERANG DEKSTOP */}
-        {isMobile === false && (
-          <img
-            src="/images/Dresscode/dekstop/Kerang.webp"
-            alt=""
-            className="absolute bottom-[0vw] -right-[8vw] z-[65] w-[25vw] pointer-events-none"
-          />
-        )}
+        {/* MUTIARA */}
+        <img
+           src="/images/Dresscode/Mutiara.gif"
+          alt=""
+          className="absolute -bottom-[8.5vw] -right-[26vw] w-[75vw] lg:-bottom-[3.5vw] lg:-right-[11vw] z-[60] lg:z-[60]  lg:w-[33vw] pointer-events-none "
+        />
+
+
         {/* ASET BAWAH */}
         {isMobile === null ? null : isMobile ? (
           <img
-            src="/images/Dresscode/AsetBawah.webp"
+            src="/images/Dresscode/Aset-BawahM.webp"
             alt="Pohon Kanan Bawah"
-            className="absolute -bottom-[2.4vw] z-[50] pointer-events-none"
+            className="absolute -bottom-[0.5vw] z-[50] pointer-events-none"
             style={{
               width: "153vw",
               height: "auto",
-              left: "53%",
+              left: "54%",
               transform: "translateX(-50%)",
               maxWidth: "none",
             }}
           />
         ) : (
           <img
-            src="/images/Dresscode/dekstop/AsetBawah.webp"
+            src="/images/Dresscode/dekstop/AsetBawahM.webp"
             alt="Pohon Kanan Bawah"
             className="absolute -bottom-[0.1vw] z-[50] opacity-90"
             style={{
@@ -200,7 +200,8 @@ const Dresscode = () => {
                 </span>
               </motion.p>
 
-              <motion.div
+                    {isMobile === null ? null : isMobile ? (
+                          <motion.div
                 variants={fadeUp}
                 initial="hidden"
                 whileInView="show"
@@ -208,19 +209,42 @@ const Dresscode = () => {
                 transition={{ duration: 3, ease: "easeOut" }}
               >
                 <Image
-                  src="/images/Dresscode/Warna.svg"
+                  src="/images/Dresscode/Warna-Dc.svg"
                   alt="ornament"
                   width={368}
                   height={40}
                   className="mt-[38px] lg:mt-[2.2vw] w-[180px] lg:w-[24.339vw]"
                 />
               </motion.div>
+      ) : (
+         <motion.div
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 3, ease: "easeOut" }}
+              >
+                <Image
+                  src="/images/Dresscode/dekstop/Warna-Dc.svg"
+                  alt="ornament"
+                  width={368}
+                  height={40}
+                  className="mt-[38px] lg:mt-[2.2vw] w-[180px] lg:w-[24.339vw]"
+                />
+              </motion.div>
+              )}
+
+
+
+          
+
+             
             </div>
 
             {/* ===================== RSVP ===================== */}
             <div
               id="rsvp"
-              className="flex flex-col items-center justify-center mt-[115px] lg:mt-[11vw]"
+              className="flex flex-col items-center justify-center mt-[105px] lg:mt-[11vw]"
             >
               <motion.h2
                 variants={fadeUp}

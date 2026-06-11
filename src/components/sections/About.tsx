@@ -84,9 +84,16 @@ const About = () => {
 
       {/* GIF SEWED  */}
       <img
-        src="/images/About/seawed.gif"
+        src="/images/About/Sewed.gif"
         alt=""
-        className="absolute -bottom-[2.5vw] -left-[20vw] lg:-bottom-[3.5vw] lg:-left-[10vw] z-[60] w-[52vw] lg:w-[31vw] pointer-events-none"
+        className="absolute -bottom-[10vw] -left-[20vw] w-[58vw] lg:-bottom-[7vw] lg:-left-[13vw] z-[60]  lg:w-[35vw] pointer-events-none"
+      />
+
+      {/* FISH ASET DARI EVENTORDER */}
+       <img
+        src="/images/EventOrder/fish.gif"
+        alt=""
+        className="absolute -bottom-[3vw] -left-[15vw] w-[75vw] lg:bottom-[0vw] lg:-left-[2vw] z-[60]  lg:w-[35vw] pointer-events-none scale-x-[-1]"
       />
 
       {/* ASET BAWAH */}
@@ -96,9 +103,9 @@ const About = () => {
           alt=""
           className="absolute -bottom-[2vw] z-[50] pointer-events-none"
           style={{
-            width: "140vw",
+            width: "135vw",
             height: "auto",
-            left: "36%",
+            left: "40%",
             transform: "translateX(-50%)",
             maxWidth: "none",
           }}
