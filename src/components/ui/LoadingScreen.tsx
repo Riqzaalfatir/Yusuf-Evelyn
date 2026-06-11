@@ -44,9 +44,7 @@ export default function LoadingScreen({ progress, onDone }: Props) {
         <h1 className="font-bigCaslon text-[30px] text-white mt-2 leading-none">
           JUSUF & EVELYN
         </h1>
-        <p className="font-ovo text-[13px] text-white/80 mt-5">
-          8 AUGUST 2026
-        </p>
+        <p className="font-ovo text-[13px] text-white/80 mt-5">8 AUGUST 2026</p>
 
         {/* Progress bar */}
         <div
@@ -66,9 +64,7 @@ export default function LoadingScreen({ progress, onDone }: Props) {
           />
         </div>
 
-        <p className="font-ovo text-[10px] text-white/40 mt-2">
-          {progress}%
-        </p>
+        <p className="font-ovo text-[10px] text-white/40 mt-2">{progress}%</p>
       </div>
     </div>
   );

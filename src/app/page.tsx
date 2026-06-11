@@ -21,14 +21,14 @@ export default function Home() {
   const { progress } = usePreloader();
 
   useEffect(() => {
-  if (!start) {
-    document.body.classList.add("overflow-hidden");
-    document.documentElement.classList.add("overflow-hidden");
-  } else {
-    document.body.classList.remove("overflow-hidden");
-    document.documentElement.classList.remove("overflow-hidden");
-  }
-}, [start]);
+    if (!start) {
+      document.body.classList.add("overflow-hidden");
+      document.documentElement.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+      document.documentElement.classList.remove("overflow-hidden");
+    }
+  }, [start]);
 
   return (
     <>
@@ -46,13 +46,10 @@ export default function Home() {
         <Footer />
       </main>
 
-      <LoadingScreen
-        progress={progress}
-        onDone={() => setShowLoading(false)}
-      />
-{progress === 100 && !showLoading && !start && (
-  <Opening setStart={setStart} namaTamu="Sela" />
-)}
+      <LoadingScreen progress={progress} onDone={() => setShowLoading(false)} />
+      {progress === 100 && !showLoading && !start && (
+        <Opening setStart={setStart} namaTamu="Sela" />
+      )}
     </>
   );
 }

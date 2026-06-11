@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
-import { century, ovo, bigCaslon, creatorsType, notoSans,
-  ibmPlexSans, } from "@/lib/fonts";
+import {
+  century,
+  ovo,
+  bigCaslon,
+  creatorsType,
+  notoSans,
+  ibmPlexSans,
+} from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
