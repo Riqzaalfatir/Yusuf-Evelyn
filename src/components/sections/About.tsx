@@ -86,7 +86,7 @@ const About = () => {
 <img
   src="/images/About/seawed.gif"
   alt=""
-  className="absolute -bottom-[2.5vw] -left-[20vw] lg:-bottom-[3.5vw] lg:-left-[10vw] z-[60] w-[50vw] lg:w-[31vw] pointer-events-none"
+  className="absolute -bottom-[2.5vw] -left-[20vw] lg:-bottom-[3.5vw] lg:-left-[10vw] z-[60] w-[52vw] lg:w-[31vw] pointer-events-none"
 />
 
       {/* ASET BAWAH */}

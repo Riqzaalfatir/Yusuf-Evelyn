@@ -45,7 +45,7 @@ export default function LoadingScreen({ progress, onDone }: Props) {
           JUSUF & EVELYN
         </h1>
         <p className="font-ovo text-[13px] text-white/80 mt-5">
-          27 JUNE 2026
+          8 AUGUST 2026
         </p>
 
         {/* Progress bar */}
