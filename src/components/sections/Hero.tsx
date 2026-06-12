@@ -34,7 +34,7 @@ const Hero = ({ start }: { start: boolean }) => {
           variants={fadeIn}
           initial="hidden"
           animate={start ? "show" : "hidden"}
-          transition={{ duration: 2.5, ease: "easeOut", delay: 0 }}
+          transition={{ duration: 3, ease: "easeOut", delay: 0 }}
             className="absolute top-[14.2%] left-1/2 -translate-x-1/2 w-[51px] lg:top-[16%] lg:w-[79px] h-auto z-30"
         >
           <Image

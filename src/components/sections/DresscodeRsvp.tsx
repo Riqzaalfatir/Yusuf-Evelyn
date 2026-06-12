@@ -75,7 +75,7 @@ const Dresscode = () => {
           alt=""
           width={147}
           height={108}
-          className="absolute top-[31%]  w-[19vw] right-[3vw] lg:top-[33%]  lg:w-[10vw] lg:right-[1.5vw] z-40 "
+          className="absolute top-[30.5%]  w-[21vw] right-[2.8vw] lg:top-[33%]  lg:w-[10vw] lg:right-[1.5vw] z-40 "
         />
 
         {/* ASET ATAS */}
@@ -209,7 +209,7 @@ const Dresscode = () => {
                 transition={{ duration: 3, ease: "easeOut" }}
               >
                 <Image
-                  src="/images/Dresscode/Warna-Dc.svg"
+                  src="/images/Dresscode/WarnaDC.svg"
                   alt="ornament"
                   width={368}
                   height={40}
@@ -225,7 +225,7 @@ const Dresscode = () => {
                 transition={{ duration: 3, ease: "easeOut" }}
               >
                 <Image
-                  src="/images/Dresscode/dekstop/Warna-Dc.svg"
+                  src="/images/Dresscode/dekstop/WarnaDC.svg"
                   alt="ornament"
                   width={368}
                   height={40}
